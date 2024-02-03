@@ -2,112 +2,96 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <main className="grid grid-cols-12 gap-6 w-full">
+        <div className="lg:col-span-6 col-span-12 hidden lg:block relative">
+          <div className="cover relative w-full h-full z-[1] p-10">
+            <a href="#" className="header- logo">
+              <img src="/assets/img/brand-logos/desktop-dark.png" alt="logo"
+                   className="ltr:ml-auto rtl:mr-auto block"/>
+            </a>
+            <div className="authentication-page justify-center w-full max-w-7xl mx-auto p-0">
+              <img src="/assets/img/authentication/2.png" alt="logo" className="mx-auto h-[500px]"/>
+            </div>
+          </div>
         </div>
-      </div>
+        <div className="lg:col-span-6 col-span-12">
+          <div className="authentication-page w-full">
+            <main id="content" className="w-full max-w-md mx-auto p-6">
+              <a href="index.html" className="header-logo lg:hidden">
+                <img src="/assets/img/brand-logos/desktop-logo.png" alt="logo" className="mx-auto block dark:hidden"/>
+                <img src="/assets/img/brand-logos/desktop-dark.png" alt="logo" className="mx-auto hidden dark:block"/>
+              </a>
+              <div className="mt-7">
+                <div className="p-4 sm:p-7">
+                  <div className="text-center">
+                    <h1 className="block text-2xl   font-bold text-gray-800">Sign in</h1>
+                    <p className="mt-3 text-sm text-gray-600 ">
+                      Don't have an account yet?
+                      <a className="text-primary ml-1 decoration-2 hover:underline font-medium" href="signup.html">
+                        Sign up here
+                      </a>
+                    </p>
+                  </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+                  <div className="mt-5">
+                    <button type="button"
+                            className="w-full py-2 px-3 inline-flex justify-center items-center gap-2 rounded-sm border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-0 focus:ring-offset-0 focus:ring-offset-white focus:ring-primary transition-all text-sm hover:bg-primary/50 border-white/10 text-white/70 hover:text-white dark:focus:ring-offset-white/10">
+                      <img src="/assets/img/authentication/social/1.png" className="w-4 h-4"
+                           alt="google-img"/>
+                      Sign in with Google
+                    </button>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+                    <div
+                        className="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-[1_1_0%] before:border-t before:border-gray-200 ltr:before:mr-6 rtl:before:ml-6 after:flex-[1_1_0%] after:border-t after:border-gray-200 ltr:after:ml-6 rtl:after:mr-6 dark:text-white/70 dark:before:border-white/10 dark:after:border-white/10">
+                      Or
+                    </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+                    <div>
+                      <div className="grid gap-y-4">
+                        <div>
+                          <label htmlFor="email" className="block text-sm mb-2 text-gray-800">Email
+                            address</label>
+                          <div className="relative">
+                            <input type="email" id="email" name="email"
+                                   className="py-2 px-3 block w-full border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary dark:bg-white dark:border-dark/10 text-dark/70"
+                                   required/>
+                          </div>
+                        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+                        <div>
+                          <div className="flex justify-between items-center">
+                            <label htmlFor="password"
+                                   className="block text-sm mb-2 text-gray-800">Password</label>
+                            <a className="text-sm text-primary decoration-2 hover:underline font-medium"
+                               href="forgot.html">Forgot password?</a>
+                          </div>
+                          <div className="relative">
+                            <input type="password" id="password" name="password"
+                                   className="py-2 px-3 block w-full border-gray-200 rounded-sm text-sm focus:border-primary focus:ring-primary dark:bg-white dark:border-dark/10 text-dark/70"
+                                   required/>
+                          </div>
+                        </div>
+                        <div className="flex items-center text-gray-800">
+                          <div className="flex">
+                            <input id="remember-me" name="remember-me" type="checkbox"
+                                   className="shrink-0 mt-0.5 border-gray-200 rounded text-primary pointer-events-none focus:ring-primary  border-white/10 checked:bg-primary dark:checked:border-primary dark:focus:ring-offset-white/10"/>
+                          </div>
+                          <div className="ml-3">
+                            <label htmlFor="remember-me" className="text-sm text-gray-800">Remember
+                              me</label>
+                          </div>
+                        </div>
+                        <a href="index.html"
+                           className="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-sm border border-transparent font-semibold bg-primary text-white focus:outline-none focus:ring-0 focus:ring-primary focus:ring-offset-0 transition-all text-sm dark:focus:ring-offset-white/10 hover:bg-primary/80">Sign
+                          in</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </main>
   );
 }
