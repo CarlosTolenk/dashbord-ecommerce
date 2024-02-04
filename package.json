@@ -10,7 +10,8 @@
     "postcss": "sass ./public/assets/scss/style.scss ./public/assets/css/style.css && postcss ./public/assets/css/style.css -o ./public/assets/css/style.css",
     "sass": "sass ./public/assets/scss/:./public/assets/css/",
     "sass-min": "sass ./public/assets/scss/:./public/assets/css/ --style compressed",
-    "prettier:fix": "prettier --fix"
+    "prettier:fix": "prettier . --write",
+    "prettier:check": "prettier . --check"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.7",
