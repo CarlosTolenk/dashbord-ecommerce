@@ -1,11 +1,11 @@
 /* Start Icon-Click Styles */
-[data-nav-style="icon-click"][data-nav-layout="horizontal"] {
+[data-nav-style='icon-click'][data-nav-layout='horizontal'] {
   @extend .icon-click;
 
   @media (min-width: 992px) {
     .app-sidebar {
       .slide.side-menu__label1 {
-        @apply block pt-1 pb-3 px-7 border-b border-gray-200 mb-3 mx-0;
+        @apply mx-0 mb-3 block border-b border-gray-200 px-7 pb-3 pt-1;
       }
       .side-menu__item {
         @apply px-4;
@@ -31,18 +31,18 @@
   }
 }
 
-[data-nav-style="icon-click"][toggled="icon-click-closed"] {
-  &:not([data-nav-layout="horizontal"]) {
+[data-nav-style='icon-click'][toggled='icon-click-closed'] {
+  &:not([data-nav-layout='horizontal']) {
     @extend .icon-click;
     @media (min-width: 992px) {
       .main-menu {
         @apply px-[1.219rem];
       }
       #sidebar-scroll {
-        @apply overflow-y-visible h-auto;
+        @apply h-auto overflow-y-visible;
       }
       .app-sidebar {
-        @apply w-20 absolute;
+        @apply absolute w-20;
         .slide.has-sub .slide-menu {
           @apply pb-2;
         }
@@ -73,10 +73,10 @@
           }
         }
         .slide.side-menu__label1 {
-          @apply block py-3 px-7 border-b border-gray-200 mb-3;
+          @apply mb-3 block border-b border-gray-200 px-7 py-3;
         }
         .slide.side-menu__label1 {
-          @apply py-3 px-7 #{!important};
+          @apply px-7 py-3 #{!important};
         }
       }
       &.dark {
@@ -97,7 +97,7 @@
         }
       }
 
-      &[dir="ltr"] {
+      &[dir='ltr'] {
         .header {
           @apply pl-20;
         }
@@ -144,7 +144,7 @@
         }
       }
 
-      &[dir="rtl"] {
+      &[dir='rtl'] {
         .header {
           @apply pr-20;
         }
@@ -166,7 +166,7 @@
                 @apply right-0;
 
                 .side-menu__item {
-                  @apply pr-8 pl-4;
+                  @apply pl-4 pr-8;
                   &:before {
                     @apply right-3;
                   }
@@ -200,7 +200,7 @@
   @media (min-width: 992px) {
     .app-sidebar {
       .main-sidebar {
-        @apply overflow-visible h-[90%];
+        @apply h-[90%] overflow-visible;
       }
 
       .main-sidebar-header {
@@ -224,7 +224,7 @@
 
           .slide {
             .side-menu__item {
-              @apply text-start flex;
+              @apply flex text-start;
 
               &:before {
                 @apply top-[0.72rem];
@@ -234,7 +234,7 @@
           @apply mt-0 #{!important};
 
           .side-menu__angle {
-            @apply block  top-[0.65rem];
+            @apply top-[0.65rem]  block;
           }
         }
       }
@@ -245,14 +245,14 @@
       }
 
       .side-menu__item {
-        @apply text-center flex;
+        @apply flex text-center;
       }
       .side-menu__label {
         @apply hidden;
       }
 
       .slide.has-sub .slide-menu {
-        @apply bg-white dark:bg-bgdark shadow-md transition-none;
+        @apply bg-white shadow-md transition-none dark:bg-bgdark;
         @apply absolute #{!important};
       }
 

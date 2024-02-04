@@ -10,7 +10,7 @@
 // }
 
 .style1 {
-  @apply fixed m-0 translate-x-[1686px] -translate-y-[243px] top-auto right-auto bottom-0 left-0;
+  @apply fixed bottom-0 left-0 right-auto top-auto m-0 -translate-y-[243px] translate-x-[1686px];
 }
 
 @media (min-width: 480px) {
@@ -35,19 +35,19 @@
 //switcher primary color picker
 .color-picker-input {
   input {
-    @apply w-8 h-8 rounded-[0.5rem] cursor-pointer relative mt-[0.25rem];
+    @apply relative mt-[0.25rem] h-8 w-8 cursor-pointer rounded-[0.5rem];
 
     &::before {
-      @apply content-["\efc3"] font-['remixicon'] text-white/70 leading-loose absolute z-30 top-[2px] left-[9px] #{!important};
+      @apply absolute left-[9px] top-[2px] z-30 font-['remixicon'] leading-loose text-white/70 content-["\efc3"] #{!important};
     }
   }
 
-  input[type="color" i]::-webkit-color-swatch {
-    @apply border border-[#5e76a6] bg-[#5e76a6] rounded-[0.5rem] #{!important};
+  input[type='color' i]::-webkit-color-swatch {
+    @apply rounded-[0.5rem] border border-[#5e76a6] bg-[#5e76a6] #{!important};
   }
 
-  input[type="color" i]::-webkit-color-swatch-wrapper {
-    @apply p-0 absolute top-0;
+  input[type='color' i]::-webkit-color-swatch-wrapper {
+    @apply absolute top-0 p-0;
   }
 }
 
@@ -83,7 +83,6 @@
 
 /***** dark styles ****/
 .dark {
-
   ::-webkit-scrollbar {
     @apply bg-black/20 #{!important};
   }
@@ -93,7 +92,7 @@
   }
 
   .user-by-country {
-    figure[class="worldmap__figure-container"] {
+    figure[class='worldmap__figure-container'] {
       @apply bg-bgdark #{!important};
 
       path {
@@ -130,7 +129,7 @@
 }
 
 .filepond--panel-root {
-  @apply bg-transparent border-dotted border-[0px] border border-gray-200 dark:border-white/10 #{!important};
+  @apply border border-[0px] border-dotted border-gray-200 bg-transparent dark:border-white/10 #{!important};
 }
 
 .filepond--panel-top.filepond--panel-root {
@@ -141,11 +140,11 @@
   @apply border-[0px] border-gray-200 dark:border-white/10 #{!important};
 }
 .filepond--panel-center.filepond--panel-root {
-  @apply border-[1px] border-gray-200 border-dotted dark:border-white/10 rounded-sm #{!important};
+  @apply rounded-sm border-[1px] border-dotted border-gray-200 dark:border-white/10 #{!important};
 }
 .box-nav-tabs {
   .react-select__control {
-    @apply border-t-0 border-x-0 border-b rounded-none;
+    @apply rounded-none border-x-0 border-b border-t-0;
   }
   #react-select-2-listbox {
     .active,

@@ -1,9 +1,9 @@
 /* Start Menu Styles */
-[data-menu-styles="dark"] {
+[data-menu-styles='dark'] {
   .app-sidebar {
-    @apply bg-bgdark border-white/10;
+    @apply border-white/10 bg-bgdark;
     .main-sidebar-header {
-      @apply bg-bgdark border-white/10;
+      @apply border-white/10 bg-bgdark;
       .main-logo {
         &.desktop-logo {
           @apply hidden;
@@ -16,7 +16,7 @@
     .side-menu__item {
       @apply text-gray-400;
       &.active,
-      &:active ,
+      &:active,
       &.hover,
       &:hover {
         @apply text-white #{!important};
@@ -40,7 +40,7 @@
       &.child2,
       &.child3 {
         .side-menu__item {
-          @apply text-gray-400 hover:text-gray-200 before:border-gray-400 before:hover:text-gray-200;
+          @apply text-gray-400 before:border-gray-400 hover:text-gray-200 before:hover:text-gray-200;
         }
       }
     }
@@ -48,8 +48,8 @@
       @apply text-gray-500;
     }
   }
-  &[data-vertical-style="overlay"][toggled="icon-overlay-close"] {
-    &:not([icon-overlay="open"]) {
+  &[data-vertical-style='overlay'][toggled='icon-overlay-close'] {
+    &:not([icon-overlay='open']) {
       .app-sidebar {
         .main-logo {
           &.toggle-logo {
@@ -63,8 +63,8 @@
       }
     }
   }
-  &[data-vertical-style="icontext"][toggled="icon-text-close"] {
-    &:not([icon-text="open"]) {
+  &[data-vertical-style='icontext'][toggled='icon-text-close'] {
+    &:not([icon-text='open']) {
       .app-sidebar {
         .main-logo {
           &.toggle-logo {
@@ -80,12 +80,12 @@
   }
 
   @media (min-width: 992px) {
-    &[data-nav-style="menu-click"][toggled="menu-click-closed"],
-    &[data-nav-style="menu-hover"][toggled="menu-hover-closed"],
-    &[data-nav-style="icon-click"][toggled="icon-click-closed"],
-    &[data-nav-style="icon-hover"][toggled="icon-hover-closed"],
-    &[data-vertical-style="doublemenu"] {
-      &:not([data-nav-layout="horizontal"]) {
+    &[data-nav-style='menu-click'][toggled='menu-click-closed'],
+    &[data-nav-style='menu-hover'][toggled='menu-hover-closed'],
+    &[data-nav-style='icon-click'][toggled='icon-click-closed'],
+    &[data-nav-style='icon-hover'][toggled='icon-hover-closed'],
+    &[data-vertical-style='doublemenu'] {
+      &:not([data-nav-layout='horizontal']) {
         .app-sidebar {
           .main-logo {
             &.toggle-logo {
@@ -97,7 +97,7 @@
             }
           }
           .slide.has-sub .slide-menu {
-            @apply bg-bgdark border-white/10 #{!important};
+            @apply border-white/10 bg-bgdark #{!important};
           }
           .slide.side-menu__label1 {
             @apply border-white/10 text-white #{!important};
@@ -105,14 +105,14 @@
         }
       }
     }
-    &[data-nav-layout="horizontal"] {
+    &[data-nav-layout='horizontal'] {
       .app-sidebar {
         @apply border-white/10 #{!important};
         .slide.has-sub .slide-menu {
           &.child1,
           &.child2,
           &.child3 {
-            @apply bg-bgdark border-white/10 #{!important};
+            @apply border-white/10 bg-bgdark #{!important};
           }
         }
         .slide.side-menu__label1 {
@@ -121,7 +121,7 @@
         .main-menu-container {
           .slide-left,
           .slide-right {
-            @apply bg-black/20 text-white border-white/10;
+            @apply border-white/10 bg-black/20 text-white;
             svg {
               @apply fill-white;
             }
@@ -131,11 +131,11 @@
     }
   }
 }
-[data-menu-styles="color"] {
+[data-menu-styles='color'] {
   .app-sidebar {
-    @apply bg-primary bg-gradient-to-t from-black/30 to-black/30 border-white/20;
+    @apply border-white/20 bg-primary bg-gradient-to-t from-black/30 to-black/30;
     .main-sidebar-header {
-      @apply bg-primary bg-gradient-to-t from-black/30 to-black/30 border-white/20;
+      @apply border-white/20 bg-primary bg-gradient-to-t from-black/30 to-black/30;
       .main-logo {
         &.desktop-logo {
           @apply hidden;
@@ -194,8 +194,8 @@
       @apply text-white/50;
     }
   }
-  &[data-vertical-style="overlay"][toggled="icon-overlay-close"] {
-    &:not([icon-overlay="open"]) {
+  &[data-vertical-style='overlay'][toggled='icon-overlay-close'] {
+    &:not([icon-overlay='open']) {
       .app-sidebar {
         .main-logo {
           &.toggle-logo {
@@ -209,8 +209,8 @@
       }
     }
   }
-  &[data-vertical-style="icontext"][toggled="icon-text-close"] {
-    &:not([icon-text="open"]) {
+  &[data-vertical-style='icontext'][toggled='icon-text-close'] {
+    &:not([icon-text='open']) {
       .app-sidebar {
         .main-logo {
           &.toggle-logo {
@@ -225,12 +225,12 @@
     }
   }
   @media (min-width: 992px) {
-    &[data-nav-style="menu-click"][toggled="menu-click-closed"],
-    &[data-nav-style="menu-hover"][toggled="menu-hover-closed"],
-    &[data-nav-style="icon-click"][toggled="icon-click-closed"],
-    &[data-nav-style="icon-hover"][toggled="icon-hover-closed"],
-    &[data-vertical-style="doublemenu"] {
-      &:not([data-nav-layout="horizontal"]) {
+    &[data-nav-style='menu-click'][toggled='menu-click-closed'],
+    &[data-nav-style='menu-hover'][toggled='menu-hover-closed'],
+    &[data-nav-style='icon-click'][toggled='icon-click-closed'],
+    &[data-nav-style='icon-hover'][toggled='icon-hover-closed'],
+    &[data-vertical-style='doublemenu'] {
+      &:not([data-nav-layout='horizontal']) {
         .app-sidebar {
           .main-logo {
             &.toggle-logo {
@@ -242,7 +242,7 @@
             }
           }
           .slide.has-sub .slide-menu {
-            @apply bg-primary bg-gradient-to-t from-black/30 to-black/30 border-white/20 #{!important};
+            @apply border-white/20 bg-primary bg-gradient-to-t from-black/30 to-black/30 #{!important};
           }
           .slide.side-menu__label1 {
             @apply border-white/20 text-white #{!important};
@@ -250,14 +250,14 @@
         }
       }
     }
-    &[data-nav-layout="horizontal"] {
+    &[data-nav-layout='horizontal'] {
       .app-sidebar {
         @apply border-white/20 #{!important};
         .slide.has-sub .slide-menu {
           &.child1,
           &.child2,
           &.child3 {
-            @apply bg-primary bg-gradient-to-t from-black/30 to-black/30 border-white/20 #{!important};
+            @apply border-white/20 bg-primary bg-gradient-to-t from-black/30 to-black/30 #{!important};
           }
         }
         .slide.side-menu__label1 {
@@ -266,7 +266,7 @@
         .main-menu-container {
           .slide-left,
           .slide-right {
-            @apply bg-black/20 text-white border-white/10;
+            @apply border-white/10 bg-black/20 text-white;
             svg {
               @apply fill-white;
             }
@@ -276,11 +276,11 @@
     }
   }
 }
-[data-menu-styles="gradient"] {
+[data-menu-styles='gradient'] {
   .app-sidebar {
-    @apply bg-gradient-to-b from-primary to-secondary border-white/20 before:absolute before:h-full before:w-full before:inset-0 before:bg-gradient-to-t before:from-black/30 before:to-black/30;
+    @apply border-white/20 bg-gradient-to-b from-primary to-secondary before:absolute before:inset-0 before:h-full before:w-full before:bg-gradient-to-t before:from-black/30 before:to-black/30;
     .main-sidebar-header {
-      @apply bg-primary border-white/20 before:absolute before:h-full before:w-full before:inset-0 before:bg-gradient-to-t before:from-black/30 before:to-black/30 before:-z-[1];
+      @apply border-white/20 bg-primary before:absolute before:inset-0 before:-z-[1] before:h-full before:w-full before:bg-gradient-to-t before:from-black/30 before:to-black/30;
       .main-logo {
         &.desktop-logo {
           @apply hidden;
@@ -339,8 +339,8 @@
       @apply text-white/50;
     }
   }
-  &[data-vertical-style="overlay"][toggled="icon-overlay-close"] {
-    &:not([icon-overlay="open"]) {
+  &[data-vertical-style='overlay'][toggled='icon-overlay-close'] {
+    &:not([icon-overlay='open']) {
       .app-sidebar {
         .main-logo {
           &.toggle-logo {
@@ -354,8 +354,8 @@
       }
     }
   }
-  &[data-vertical-style="icontext"][toggled="icon-text-close"] {
-    &:not([icon-text="open"]) {
+  &[data-vertical-style='icontext'][toggled='icon-text-close'] {
+    &:not([icon-text='open']) {
       .app-sidebar {
         .main-logo {
           &.toggle-logo {
@@ -370,11 +370,11 @@
     }
   }
   @media (min-width: 992px) {
-    &[data-nav-style="menu-click"][toggled="menu-click-closed"],
-    &[data-nav-style="menu-hover"][toggled="menu-hover-closed"],
-    &[data-nav-style="icon-click"][toggled="icon-click-closed"],
-    &[data-nav-style="icon-hover"][toggled="icon-hover-closed"] {
-      &:not([data-nav-layout="horizontal"]) {
+    &[data-nav-style='menu-click'][toggled='menu-click-closed'],
+    &[data-nav-style='menu-hover'][toggled='menu-hover-closed'],
+    &[data-nav-style='icon-click'][toggled='icon-click-closed'],
+    &[data-nav-style='icon-hover'][toggled='icon-hover-closed'] {
+      &:not([data-nav-layout='horizontal']) {
         .app-sidebar {
           .main-logo {
             &.toggle-logo {
@@ -386,7 +386,7 @@
             }
           }
           .slide.has-sub .slide-menu {
-            @apply bg-gradient-to-b from-primary to-secondary -z-[1] before:-z-[1] before:absolute before:h-full before:w-full before:inset-0 before:bg-gradient-to-t before:from-black/30 before:to-black/30 border-white/20 #{!important};
+            @apply -z-[1] border-white/20 bg-gradient-to-b from-primary to-secondary before:absolute before:inset-0 before:-z-[1] before:h-full before:w-full before:bg-gradient-to-t before:from-black/30 before:to-black/30 #{!important};
           }
           .slide.side-menu__label1 {
             @apply border-white/20 text-white #{!important};
@@ -394,8 +394,8 @@
         }
       }
     }
-    &[data-vertical-style="doublemenu"] {
-      &:not([data-nav-layout="horizontal"]) {
+    &[data-vertical-style='doublemenu'] {
+      &:not([data-nav-layout='horizontal']) {
         .app-sidebar {
           .main-logo {
             &.toggle-logo {
@@ -407,7 +407,7 @@
             }
           }
           .slide.has-sub .slide-menu {
-            @apply bg-gradient-to-b from-primary to-secondary -z-[1] before:-z-[1] before:absolute before:h-full before:w-full before:inset-0 before:bg-gradient-to-t before:from-black/30 before:to-black/30 border-white/20 #{!important};
+            @apply -z-[1] border-white/20 bg-gradient-to-b from-primary to-secondary before:absolute before:inset-0 before:-z-[1] before:h-full before:w-full before:bg-gradient-to-t before:from-black/30 before:to-black/30 #{!important};
             &.child2,
             &.child3 {
               @apply bg-transparent bg-none before:bg-none  #{!important};
@@ -419,15 +419,15 @@
         }
       }
     }
-    &[data-nav-layout="horizontal"] {
+    &[data-nav-layout='horizontal'] {
       .app-sidebar {
         @apply border-white/20 #{!important};
-        @apply bg-gradient-to-r from-primary to-secondary before:absolute before:h-full before:w-full before:inset-0 before:bg-gradient-to-t before:from-black/30 before:to-black/30;
+        @apply bg-gradient-to-r from-primary to-secondary before:absolute before:inset-0 before:h-full before:w-full before:bg-gradient-to-t before:from-black/30 before:to-black/30;
         .slide.has-sub .slide-menu {
           &.child1,
           &.child2,
           &.child3 {
-            @apply bg-gradient-to-b from-primary to-secondary border-white/20 #{!important};
+            @apply border-white/20 bg-gradient-to-b from-primary to-secondary #{!important};
           }
         }
         .slide.side-menu__label1 {
@@ -436,7 +436,7 @@
         .main-menu-container {
           .slide-left,
           .slide-right {
-            @apply bg-black/20 text-white border-white/10;
+            @apply border-white/10 bg-black/20 text-white;
             svg {
               @apply fill-white;
             }
@@ -446,12 +446,12 @@
     }
   }
 }
-[data-menu-styles="light"] {
+[data-menu-styles='light'] {
   .app-sidebar {
     --menu-prime-color: 128 135 147;
-    @apply bg-white border-gray-200;
+    @apply border-gray-200 bg-white;
     .main-sidebar-header {
-      @apply bg-white border-gray-200;
+      @apply border-gray-200 bg-white;
       .main-logo {
         &.desktop-logo {
           @apply block;
@@ -462,7 +462,7 @@
       }
     }
     .side-menu__item {
-      @apply text-menuprime ;
+      @apply text-menuprime;
 
       &.active,
       &:active,
@@ -470,7 +470,7 @@
       &.hover {
         @apply text-primary #{!important};
         .side-menu__icon {
-          @apply text-primary fill-primary #{!important};
+          @apply fill-primary text-primary #{!important};
         }
       }
     }
@@ -485,7 +485,7 @@
           &:hover,
           &.hover {
             @apply text-primary before:border-primary #{!important};
-            
+
             .side-menu__angle {
               @apply text-primary #{!important};
             }
@@ -497,8 +497,8 @@
       @apply text-menuprime/50;
     }
   }
-  &[data-vertical-style="overlay"][toggled="icon-overlay-close"] {
-    &:not([icon-overlay="open"]) {
+  &[data-vertical-style='overlay'][toggled='icon-overlay-close'] {
+    &:not([icon-overlay='open']) {
       .app-sidebar {
         .main-logo {
           &.toggle-logo {
@@ -512,8 +512,8 @@
       }
     }
   }
-  &[data-vertical-style="icontext"][toggled="icon-text-close"] {
-    &:not([icon-text="open"]) {
+  &[data-vertical-style='icontext'][toggled='icon-text-close'] {
+    &:not([icon-text='open']) {
       .app-sidebar {
         .main-logo {
           &.toggle-logo {
@@ -528,12 +528,12 @@
     }
   }
   @media (min-width: 992px) {
-    &[data-nav-style="menu-click"][toggled="menu-click-closed"],
-    &[data-nav-style="menu-hover"][toggled="menu-hover-closed"],
-    &[data-nav-style="icon-click"][toggled="icon-click-closed"],
-    &[data-nav-style="icon-hover"][toggled="icon-hover-closed"],
-    &[data-vertical-style="doublemenu"] {
-      &:not([data-nav-layout="horizontal"]) {
+    &[data-nav-style='menu-click'][toggled='menu-click-closed'],
+    &[data-nav-style='menu-hover'][toggled='menu-hover-closed'],
+    &[data-nav-style='icon-click'][toggled='icon-click-closed'],
+    &[data-nav-style='icon-hover'][toggled='icon-hover-closed'],
+    &[data-vertical-style='doublemenu'] {
+      &:not([data-nav-layout='horizontal']) {
         .app-sidebar {
           .main-logo {
             &.toggle-logo {
@@ -545,7 +545,7 @@
             }
           }
           .slide.has-sub .slide-menu {
-            @apply bg-white border-gray-200 #{!important};
+            @apply border-gray-200 bg-white #{!important};
           }
           .slide.side-menu__label1 {
             @apply border-gray-200 text-primary #{!important};
@@ -553,14 +553,14 @@
         }
       }
     }
-    &[data-nav-layout="horizontal"] {
+    &[data-nav-layout='horizontal'] {
       .app-sidebar {
         @apply border-gray-200 #{!important};
         .slide.has-sub .slide-menu {
           &.child1,
           &.child2,
           &.child3 {
-            @apply bg-white border-gray-200 #{!important};
+            @apply border-gray-200 bg-white #{!important};
           }
         }
         .slide.side-menu__label1 {
@@ -569,7 +569,7 @@
         .main-menu-container {
           .slide-left,
           .slide-right {
-            @apply bg-white text-menuprime border-gray-200;
+            @apply border-gray-200 bg-white text-menuprime;
             svg {
               @apply fill-menuprime;
             }
@@ -579,12 +579,12 @@
     }
   }
 }
-[data-menu-styles="transparent"] {
+[data-menu-styles='transparent'] {
   .app-sidebar {
     --menu-prime-color: 128 135 147;
-    @apply bg-bodybg border-gray-200;
+    @apply border-gray-200 bg-bodybg;
     .main-sidebar-header {
-      @apply bg-bodybg border-gray-200;
+      @apply border-gray-200 bg-bodybg;
       .main-logo {
         &.desktop-logo {
           @apply block;
@@ -599,7 +599,8 @@
       .side-menu__icon {
         @apply fill-menuprime;
       }
-      &.active,&:hover {
+      &.active,
+      &:hover {
         @apply text-primary #{!important};
         .side-menu__icon {
           @apply fill-primary text-primary #{!important};
@@ -612,9 +613,10 @@
       &.child3 {
         .side-menu__item {
           @apply text-menuprime/80 before:border-menuprime/80;
-          &.active,&:hover {
+          &.active,
+          &:hover {
             @apply text-primary before:border-primary #{!important};
-            
+
             .side-menu__angle {
               @apply text-primary #{!important};
             }
@@ -626,8 +628,8 @@
       @apply text-menuprime/50;
     }
   }
-  &[data-vertical-style="overlay"][toggled="icon-overlay-close"] {
-    &:not([icon-overlay="open"]) {
+  &[data-vertical-style='overlay'][toggled='icon-overlay-close'] {
+    &:not([icon-overlay='open']) {
       .app-sidebar {
         .main-logo {
           &.toggle-logo {
@@ -641,8 +643,8 @@
       }
     }
   }
-  &[data-vertical-style="icontext"][toggled="icon-text-close"] {
-    &:not([icon-text="open"]) {
+  &[data-vertical-style='icontext'][toggled='icon-text-close'] {
+    &:not([icon-text='open']) {
       .app-sidebar {
         .main-logo {
           &.toggle-logo {
@@ -657,12 +659,12 @@
     }
   }
   @media (min-width: 992px) {
-    &[data-nav-style="menu-click"][toggled="menu-click-closed"],
-    &[data-nav-style="menu-hover"][toggled="menu-hover-closed"],
-    &[data-nav-style="icon-click"][toggled="icon-click-closed"],
-    &[data-nav-style="icon-hover"][toggled="icon-hover-closed"],
-    &[data-vertical-style="doublemenu"] {
-      &:not([data-nav-layout="horizontal"]) {
+    &[data-nav-style='menu-click'][toggled='menu-click-closed'],
+    &[data-nav-style='menu-hover'][toggled='menu-hover-closed'],
+    &[data-nav-style='icon-click'][toggled='icon-click-closed'],
+    &[data-nav-style='icon-hover'][toggled='icon-hover-closed'],
+    &[data-vertical-style='doublemenu'] {
+      &:not([data-nav-layout='horizontal']) {
         .app-sidebar {
           .main-logo {
             &.toggle-logo {
@@ -674,7 +676,7 @@
             }
           }
           .slide.has-sub .slide-menu {
-            @apply bg-bodybg border-gray-200 #{!important};
+            @apply border-gray-200 bg-bodybg #{!important};
           }
           .slide.side-menu__label1 {
             @apply border-gray-200 text-primary #{!important};
@@ -682,14 +684,14 @@
         }
       }
     }
-    &[data-nav-layout="horizontal"] {
+    &[data-nav-layout='horizontal'] {
       .app-sidebar {
         @apply border-gray-200 #{!important};
         .slide.has-sub .slide-menu {
           &.child1,
           &.child2,
           &.child3 {
-            @apply bg-bodybg border-gray-200 #{!important};
+            @apply border-gray-200 bg-bodybg #{!important};
           }
         }
         .slide.side-menu__label1 {
@@ -698,7 +700,7 @@
         .main-menu-container {
           .slide-left,
           .slide-right {
-            @apply bg-bodybg text-menuprime border-gray-200;
+            @apply border-gray-200 bg-bodybg text-menuprime;
             svg {
               @apply fill-menuprime;
             }
@@ -709,7 +711,9 @@
         .app-sidebar {
           @apply border-white/10 #{!important};
           .slide.has-sub .slide-menu {
-            &.child1, &.child2, &.child3 {
+            &.child1,
+            &.child2,
+            &.child3 {
               @apply border-white/10 #{!important};
             }
           }
@@ -738,12 +742,13 @@
         }
       }
       .side-menu__item {
-        @apply  text-white/70;
+        @apply text-white/70;
         .side-menu__icon {
           @apply fill-white/70 text-white/70;
         }
-        &.active,&:hover {
-          @apply  text-white #{!important};
+        &.active,
+        &:hover {
+          @apply text-white #{!important};
           .side-menu__icon {
             @apply fill-white text-white #{!important};
           }
@@ -755,25 +760,25 @@
         &.child3 {
           .side-menu__item {
             @apply text-white/70 before:border-white/80;
-            
-          &.active {
-            @apply text-white #{!important};
-            &::before {
-              @apply border-white #{!important};
-            }
-            .side-menu__angle {
+
+            &.active {
               @apply text-white #{!important};
+              &::before {
+                @apply border-white #{!important};
+              }
+              .side-menu__angle {
+                @apply text-white #{!important};
+              }
             }
-          }
-          &:hover {
-            @apply text-white #{!important};
-            &::before {
-              @apply border-white #{!important};
-            }
-            .side-menu__angle {
+            &:hover {
               @apply text-white #{!important};
+              &::before {
+                @apply border-white #{!important};
+              }
+              .side-menu__angle {
+                @apply text-white #{!important};
+              }
             }
-          }
           }
         }
       }
@@ -781,8 +786,8 @@
         @apply text-white/50;
       }
     }
-    &[data-vertical-style="overlay"][toggled="icon-overlay-close"] {
-      &:not([icon-overlay="open"]) {
+    &[data-vertical-style='overlay'][toggled='icon-overlay-close'] {
+      &:not([icon-overlay='open']) {
         .app-sidebar {
           .main-logo {
             &.toggle-logo {
@@ -796,8 +801,8 @@
         }
       }
     }
-    &[data-vertical-style="icontext"][toggled="icon-text-close"] {
-      &:not([icon-text="open"]) {
+    &[data-vertical-style='icontext'][toggled='icon-text-close'] {
+      &:not([icon-text='open']) {
         .app-sidebar {
           .main-logo {
             &.toggle-logo {
@@ -812,12 +817,12 @@
       }
     }
     @media (min-width: 992px) {
-      &[data-nav-style="menu-click"][toggled="menu-click-closed"],
-      &[data-nav-style="menu-hover"][toggled="menu-hover-closed"],
-      &[data-nav-style="icon-click"][toggled="icon-click-closed"],
-      &[data-nav-style="icon-hover"][toggled="icon-hover-closed"],
-      &[data-vertical-style="doublemenu"] {
-        &:not([data-nav-layout="horizontal"]) {
+      &[data-nav-style='menu-click'][toggled='menu-click-closed'],
+      &[data-nav-style='menu-hover'][toggled='menu-hover-closed'],
+      &[data-nav-style='icon-click'][toggled='icon-click-closed'],
+      &[data-nav-style='icon-hover'][toggled='icon-hover-closed'],
+      &[data-vertical-style='doublemenu'] {
+        &:not([data-nav-layout='horizontal']) {
           .app-sidebar {
             .main-logo {
               &.toggle-logo {
@@ -837,7 +842,7 @@
           }
         }
       }
-      &[data-nav-layout="horizontal"] {
+      &[data-nav-layout='horizontal'] {
         .app-sidebar {
           @apply border-white/10 #{!important};
           .slide.side-menu__label1 {
@@ -846,7 +851,7 @@
           .main-menu-container {
             .slide-left,
             .slide-right {
-              @apply text-white border-white/10;
+              @apply border-white/10 text-white;
               svg {
                 @apply fill-white;
               }
@@ -868,7 +873,7 @@
     }
   }
 }
-[data-nav-layout="vertical"] {
+[data-nav-layout='vertical'] {
   .app-sidebar {
     .main-menu-container {
       .main-menu {

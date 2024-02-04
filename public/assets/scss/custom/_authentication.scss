@@ -1,15 +1,15 @@
 /* Start Authentication Styles */
 
 .authentication-page {
-  @apply sm:py-16 h-full md:h-screen flex items-center justify-center;
+  @apply flex h-full items-center justify-center sm:py-16 md:h-screen;
 }
 
 .cover {
-  @apply bg-[url('/assets/img/authentication/1.png')] bg-cover bg-no-repeat before:bg-primary/95 before:-z-[1] before:absolute before:w-full before:h-full before:top-0 before:inset-x-0;
+  @apply bg-[url('/assets/img/authentication/1.png')] bg-cover bg-no-repeat before:absolute before:inset-x-0 before:top-0 before:-z-[1] before:h-full before:w-full before:bg-primary/95;
 }
 
 .cover1 {
-  @apply relative bg-[url('/assets/img/authentication/1.png')] bg-cover bg-center inline-table w-full h-full bg-no-repeat before:bg-primary/95 before:-z-[1] before:absolute before:w-full before:h-full;
+  @apply relative inline-table h-full w-full bg-[url('/assets/img/authentication/1.png')] bg-cover bg-center bg-no-repeat before:absolute before:-z-[1] before:h-full before:w-full before:bg-primary/95;
 }
 
 .error-basic-background {

@@ -1,17 +1,17 @@
 /* Start:: Dashboard-6 Styles */
 
-#audience{
+#audience {
   .apexcharts-text.apexcharts-yaxis-label.apexcharts-yaxis-label {
     @apply rtl:-translate-x-3;
   }
 }
-#audienceReport{
+#audienceReport {
   .apexcharts-text.apexcharts-yaxis-label.apexcharts-yaxis-label {
     @apply rtl:-translate-x-11;
   }
 }
 #session2 {
-  .apexcharts-text  {
+  .apexcharts-text {
     @apply hidden;
   }
 }

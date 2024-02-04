@@ -19,66 +19,66 @@
 }
 
 .shape-1 {
-  @apply ltr:left-[20%] rtl:right-[20%] top-[20%];
+  @apply top-[20%] ltr:left-[20%] rtl:right-[20%];
 }
 .shape-2 {
-  @apply ltr:left-[5%] rtl:right-[5%] top-[42%];
+  @apply top-[42%] ltr:left-[5%] rtl:right-[5%];
 }
 
 .shape-3 {
-  @apply ltr:right-[15%] rtl:left-[15%] bottom-[55%];
+  @apply bottom-[55%] ltr:right-[15%] rtl:left-[15%];
 }
 
 .shape-4 {
-  @apply ltr:left-[55%] rtl:right-[55%] top-[25%];
+  @apply top-[25%] ltr:left-[55%] rtl:right-[55%];
 }
 
 .shape-5 {
-  @apply ltr:left-[50%] rtl:right-[50%] bottom-[25%];
+  @apply bottom-[25%] ltr:left-[50%] rtl:right-[50%];
 }
 
 .shape-6 {
-  @apply ltr:right-[10%] rtl:left-[10%] bottom-[10%];
+  @apply bottom-[10%] ltr:right-[10%] rtl:left-[10%];
 }
 
 .shape-7 {
-  @apply ltr:left-[20%] rtl:right-[20%] bottom-[17%];
+  @apply bottom-[17%] ltr:left-[20%] rtl:right-[20%];
 }
 
 .shape-8 {
-  @apply ltr:right-[20%] rtl:left-[20%] bottom-[17%];
+  @apply bottom-[17%] ltr:right-[20%] rtl:left-[20%];
 }
 
 .shape-9 {
-  @apply ltr:right-[25%] rtl:left-[25%] top-[10%];
+  @apply top-[10%] ltr:right-[25%] rtl:left-[25%];
 }
 
 .shape-10 {
-  @apply ltr:right-[5%] rtl:left-[5%] top-[15%];
+  @apply top-[15%] ltr:right-[5%] rtl:left-[5%];
 }
 
 .shape-11 {
-  @apply ltr:left-[15%] rtl:right-[15%] bottom-[35%];
+  @apply bottom-[35%] ltr:left-[15%] rtl:right-[15%];
 }
 
 .shape-12 {
-  @apply ltr:left-[25%] rtl:right-[25%] top-[40%];
+  @apply top-[40%] ltr:left-[25%] rtl:right-[25%];
 }
 
 .shape-13 {
-  @apply ltr:left-[10%] rtl:right-[10%] bottom-[10%];
+  @apply bottom-[10%] ltr:left-[10%] rtl:right-[10%];
 }
 
 .shape-14 {
-  @apply ltr:-right-[10%] rtl:-left-[10%] -bottom-[10%];
+  @apply -bottom-[10%] ltr:-right-[10%] rtl:-left-[10%];
 }
 
 .shape-15 {
-  @apply ltr:-left-[20%] rtl:-right-[20%] -bottom-[17%];
+  @apply -bottom-[17%] ltr:-left-[20%] rtl:-right-[20%];
 }
 
 .shape-16 {
-  @apply ltr:-right-[20%] rtl:-left-[20%] -bottom-[17%];
+  @apply -bottom-[17%] ltr:-right-[20%] rtl:-left-[20%];
 }
 
 /* End:: Dashboard-7 Styles */

@@ -1,16 +1,16 @@
 /* Start Landing Styles */
-[data-nav-layout="horizontal"] {
+[data-nav-layout='horizontal'] {
   .landing-body {
     @media (min-width: 992px) {
       .app-sidebar {
-        @apply h-[3.8rem] top-0 bg-white shadow-none border-b-0 p-3 #{!important};
+        @apply top-0 h-[3.8rem] border-b-0 bg-white p-3 shadow-none #{!important};
 
         .main-menu-container {
-          @apply flex justify-between items-center;
+          @apply flex items-center justify-between;
         }
 
         .main-sidebar {
-          @apply w-full mx-0 #{!important};
+          @apply mx-0 w-full #{!important};
         }
 
         .child1 {
@@ -98,7 +98,8 @@
         }
       }
       .main-menu-container {
-        .slide-left,.slide-right {
+        .slide-left,
+        .slide-right {
           @apply hidden;
         }
         // .slide-left {
@@ -127,7 +128,7 @@
       }
     }
     .landing-wrapper {
-      @apply bg-[url("/assets/img/landing/2.png")] w-full text-white leading-normal relative before:bg-primary/60 before:absolute before:w-full before:h-full before:inset-0;
+      @apply relative w-full bg-[url("/assets/img/landing/2.png")] leading-normal text-white before:absolute before:inset-0 before:h-full before:w-full before:bg-primary/60;
     }
 
     .section {
@@ -135,11 +136,11 @@
     }
 
     .shape svg {
-      @apply scale-[2] w-full h-auto origin-top;
+      @apply h-auto w-full origin-top scale-[2];
     }
 
     .shape {
-      @apply -bottom-[1px] absolute pointer-events-none inset-x-0 w-full;
+      @apply pointer-events-none absolute inset-x-0 -bottom-[1px] w-full;
     }
 
     .section-title {
@@ -148,7 +149,7 @@
 
     .landing-service-img {
       img {
-        @apply w-14 h-14;
+        @apply h-14 w-14;
       }
     }
 
@@ -172,23 +173,23 @@
     }
     #features {
       svg {
-        [fill="#9399a1"] {
+        [fill='#9399a1'] {
           @apply fill-primary;
         }
-        [fill="#4b5563"] {
+        [fill='#4b5563'] {
           @apply fill-secondary;
         }
-        [fill="#6f7782"] {
+        [fill='#6f7782'] {
           @apply fill-secondary;
         }
-        [fill="#b7bbc0"] {
+        [fill='#b7bbc0'] {
           @apply fill-primary/80;
         }
       }
     }
     #features {
       svg {
-        @apply w-full h-full;
+        @apply h-full w-full;
       }
     }
   }
@@ -253,7 +254,7 @@
       }
     }
   }
-  &[dir="ltr"] {
+  &[dir='ltr'] {
     .landing-body {
       @media (min-width: 992px) {
         .app-sidebar {
@@ -264,7 +265,7 @@
       }
     }
   }
-  &[dir="rtl"] {
+  &[dir='rtl'] {
     .landing-body {
       @media (min-width: 992px) {
         .app-sidebar {
@@ -278,7 +279,8 @@
             // .slide-right {
             //   @apply -right-[3%] left-auto #{!important};
             // }
-            .slide-left,.slide-right {
+            .slide-left,
+            .slide-right {
               @apply hidden;
             }
           }

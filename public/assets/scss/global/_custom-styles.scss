@@ -27,7 +27,7 @@
 
 //form-layouts
 .react-datepicker__calendar-icon {
-  @apply fill-[#64748b] mt-1;
+  @apply mt-1 fill-[#64748b];
 }
 
 //customized styles
@@ -96,18 +96,18 @@
 
 .ProductTag {
   .rti--container {
-    @apply p-0 border-0 #{!important};
+    @apply border-0 p-0 #{!important};
   }
 }
 
 //editproducts
 .product-search {
   .css-13cymwt-control {
-    @apply bg-white border-gray-200 dark:bg-bgdark dark:border-white/10 rounded-sm #{!important};
+    @apply rounded-sm border-gray-200 bg-white dark:border-white/10 dark:bg-bgdark #{!important};
   }
 
   .css-1u9des2-indicatorSeparator {
-    @apply bg-gray-200 dark:bg-white/10 hidden #{!important};
+    @apply hidden bg-gray-200 dark:bg-white/10 #{!important};
   }
 
   .css-1xc3v61-indicatorContainer {
@@ -127,18 +127,17 @@ html {
   @apply scroll-smooth;
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
   @apply appearance-none;
 }
 
 @media (min-width: 992px) {
-  [data-nav-layout="horizontal"] {
-
-    &[data-nav-style="icon-click"][toggled="icon-click-closed"],
-    &[data-nav-style="icon-hover"][toggled="icon-hover-closed"] {
+  [data-nav-layout='horizontal'] {
+    &[data-nav-style='icon-click'][toggled='icon-click-closed'],
+    &[data-nav-style='icon-hover'][toggled='icon-hover-closed'] {
       .app-sidebar .slide.has-sub .slide-menu.child1 {
         @apply top-[2.65rem] #{!important};
       }
@@ -147,7 +146,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 //gradient menu
-[data-menu-styles=gradient] .app-sidebar:before {
+[data-menu-styles='gradient'] .app-sidebar:before {
   @apply bottom-0 left-0 -z-[1];
 }
 
@@ -157,15 +156,15 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 @media (min-width: 991.98px) {
-  [data-nav-layout="horizontal"][data-nav-style="menu-hover"][data-width="boxed"] {
+  [data-nav-layout='horizontal'][data-nav-style='menu-hover'][data-width='boxed'] {
     .main-menu-container {
-      @apply overflow-hidden w-full;
+      @apply w-full overflow-hidden;
     }
   }
 }
 
 .firebase-data {
-  @apply rounded-md bg-bodybg p-[7px] ms-[145px] w-[27%];
+  @apply ms-[145px] w-[27%] rounded-md bg-bodybg p-[7px];
 }
 
 .hs-overlay-backdrop {
@@ -177,11 +176,11 @@ input[type="search"]::-webkit-search-results-decoration {
     @apply border-0 #{!important};
   }
 }
-.react-select__input-container{
+.react-select__input-container {
   @apply dark:text-white;
 }
-[dir = "rtl"] {
-  .MuiSvgIcon-root{
+[dir='rtl'] {
+  .MuiSvgIcon-root {
     @apply rotate-180;
   }
 }
@@ -190,22 +189,22 @@ input[type="search"]::-webkit-search-results-decoration {
   @apply border-primary bg-primary;
 }
 .\!p-\[0\.65rem\] {
- @apply p-[0.63rem] #{!important};
+  @apply p-[0.63rem] #{!important};
 }
 .contact-dropdown {
- .ti-btn-primary {
-   @apply m-0 me-1 #{!important};
- }
+  .ti-btn-primary {
+    @apply m-0 me-1 #{!important};
+  }
 }
 .react-dropdown-select-item {
- @apply border-b-0 #{!important};
+  @apply border-b-0 #{!important};
 }
 @media (max-width: 490px) {
- .react-select__control {
-   @apply border-t-0 #{!important};
- }
+  .react-select__control {
+    @apply border-t-0 #{!important};
+  }
 }
 
 #__next {
- @apply w-[100%]
+  @apply w-[100%];
 }

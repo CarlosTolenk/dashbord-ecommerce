@@ -1,8 +1,8 @@
 /* Start Icon-Overlay Styles */
 
-[data-vertical-style="overlay"][toggled="icon-overlay-close"] {
+[data-vertical-style='overlay'][toggled='icon-overlay-close'] {
   @media screen and (min-width: 992px) {
-    &:not([icon-overlay="open"]) {
+    &:not([icon-overlay='open']) {
       .app-sidebar {
         @apply w-24;
 

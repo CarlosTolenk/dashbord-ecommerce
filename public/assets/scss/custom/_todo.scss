@@ -1,7 +1,7 @@
 /* Start todo Styles */
 .todo-right {
   .choices {
-    @apply w-40 mb-0;
+    @apply mb-0 w-40;
   }
 
   .choices__list--single {
@@ -9,12 +9,12 @@
   }
 
   .choices__inner {
-    @apply py-[2px] leading-8 min-h-0 #{!important};
+    @apply min-h-0 py-[2px] leading-8 #{!important};
   }
 
   .choices__list--dropdown .choices__item--selectable::after,
   .choices__list[aria-expanded] .choices__item--selectable::after,
-  .choices[data-type*="select-one"] .choices__button {
+  .choices[data-type*='select-one'] .choices__button {
     @apply hidden;
   }
 
@@ -43,7 +43,7 @@
 
 .task-right {
   .choices {
-    @apply w-40 mb-0;
+    @apply mb-0 w-40;
   }
 
   .choices__list--single {
@@ -51,12 +51,12 @@
   }
 
   .choices__inner {
-    @apply py-[2px] leading-8 min-h-0 #{!important};
+    @apply min-h-0 py-[2px] leading-8 #{!important};
   }
 
   .choices__list--dropdown .choices__item--selectable::after,
   .choices__list[aria-expanded] .choices__item--selectable::after,
-  .choices[data-type*="select-one"] .choices__button {
+  .choices[data-type*='select-one'] .choices__button {
     @apply hidden;
   }
 

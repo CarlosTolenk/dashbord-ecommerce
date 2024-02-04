@@ -1,5 +1,5 @@
 /* Start Menu-Click Styles */
-[data-nav-style="menu-click"][data-nav-layout="horizontal"] {
+[data-nav-style='menu-click'][data-nav-layout='horizontal'] {
   @extend .menu-click;
 
   @media (min-width: 992px) {
@@ -19,13 +19,13 @@
       }
     }
 
-    &[dir="ltr"] {
+    &[dir='ltr'] {
       .side-menu__icon {
         @apply mr-[0.35rem] #{!important};
       }
     }
 
-    &[dir="rtl"] {
+    &[dir='rtl'] {
       .side-menu__icon {
         @apply ml-[0.35rem] #{!important};
       }
@@ -33,8 +33,8 @@
   }
 }
 
-[data-nav-style="menu-click"][toggled="menu-click-closed"] {
-  &:not([data-nav-layout="horizontal"]) {
+[data-nav-style='menu-click'][toggled='menu-click-closed'] {
+  &:not([data-nav-layout='horizontal']) {
     @extend .menu-click;
     @media (min-width: 992px) {
       .main-menu {
@@ -44,10 +44,10 @@
         @apply text-xs;
       }
       #sidebar-scroll {
-        @apply overflow-y-visible h-auto;
+        @apply h-auto overflow-y-visible;
       }
       .app-sidebar {
-        @apply w-36 absolute;
+        @apply absolute w-36;
         .slide.has-sub .slide-menu {
           @apply py-2;
         }
@@ -95,7 +95,7 @@
         }
       }
 
-      &[dir="ltr"] {
+      &[dir='ltr'] {
         .header {
           @apply pl-36;
         }
@@ -142,7 +142,7 @@
         }
       }
 
-      &[dir="rtl"] {
+      &[dir='rtl'] {
         .header {
           @apply pr-36;
         }
@@ -199,7 +199,7 @@
   @media (min-width: 992px) {
     .app-sidebar {
       .main-sidebar {
-        @apply overflow-hidden h-[90%];
+        @apply h-[90%] overflow-hidden;
       }
 
       .main-sidebar-header {
@@ -207,7 +207,7 @@
       }
 
       .side-menu__icon {
-        @apply mb-2 mx-auto;
+        @apply mx-auto mb-2;
       }
 
       .slide {
@@ -223,7 +223,7 @@
 
           .slide {
             .side-menu__item {
-              @apply text-start flex;
+              @apply flex text-start;
 
               &:before {
                 @apply top-[0.72rem];
@@ -233,7 +233,7 @@
           @apply mt-0 #{!important};
 
           .side-menu__angle {
-            @apply block  top-[0.65rem];
+            @apply top-[0.65rem]  block;
           }
         }
       }
@@ -244,7 +244,7 @@
       }
 
       .slide.has-sub .slide-menu {
-        @apply bg-white dark:bg-bgdark shadow-md transition-none;
+        @apply bg-white shadow-md transition-none dark:bg-bgdark;
         @apply absolute #{!important};
       }
 

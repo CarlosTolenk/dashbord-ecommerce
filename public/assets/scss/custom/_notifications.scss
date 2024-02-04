@@ -30,7 +30,7 @@
   @apply bg-gray-50 dark:bg-bgdark #{!important};
 }
 .awn-toast.awn-toast-success {
-  @apply text-success bg-success/20 #{!important};
+  @apply bg-success/20 text-success #{!important};
 }
 .awn-toast.awn-toast-success .awn-toast-wrapper {
   @apply border-success/50 #{!important};
@@ -43,7 +43,7 @@
   @apply bg-success #{!important};
 }
 .awn-toast.awn-toast-info {
-  @apply text-info bg-info/20 #{!important};
+  @apply bg-info/20 text-info #{!important};
 }
 .awn-toast.awn-toast-info .awn-toast-wrapper {
   @apply border-info/50 #{!important};
@@ -53,10 +53,10 @@
   @apply text-info #{!important};
 }
 .awn-toast.awn-toast-info .awn-toast-progress-bar:after {
-  @apply text-info bg-info/20 #{!important};
+  @apply bg-info/20 text-info #{!important};
 }
 .awn-toast.awn-toast-alert {
-  @apply text-danger bg-danger/20 #{!important};
+  @apply bg-danger/20 text-danger #{!important};
 }
 .awn-toast.awn-toast-alert .awn-toast-wrapper {
   @apply border-danger/50 #{!important};
@@ -69,7 +69,7 @@
   @apply bg-danger #{!important};
 }
 .awn-toast.awn-toast-warning {
-  @apply text-warning bg-warning/20 #{!important};
+  @apply bg-warning/20 text-warning #{!important};
 }
 .awn-toast.awn-toast-warning .awn-toast-wrapper {
   @apply border-warning/50 #{!important};
@@ -119,19 +119,19 @@
   }
 }
 #awn-popup-wrapper {
-  @apply text-center bg-bgdark/80 #{!important};
+  @apply bg-bgdark/80 text-center #{!important};
 }
 
 #awn-toast-container {
-  @apply right-0 sm:right-[24px] rtl:left-0 rtl:right-auto rtl:sm:left-[24px] z-10 #{!important};
+  @apply right-0 z-10 sm:right-[24px] rtl:left-0 rtl:right-auto rtl:sm:left-[24px] #{!important};
 }
 
 .awn-toast-wrapper {
-  @apply rtl:pr-[16px] rtl:pl-[88px];
+  @apply rtl:pl-[88px] rtl:pr-[16px];
 }
 
 .awn-popup-loading-dots {
-  @apply rtl:mr-[24px] rtl:ml-0;
+  @apply rtl:ml-0 rtl:mr-[24px];
 }
 
 /* End notifications Styles */

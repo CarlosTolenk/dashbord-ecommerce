@@ -29,15 +29,15 @@
 }
 
 .inner:hover .image-overlay {
-  @apply opacity-100 visible;
+  @apply visible opacity-100;
 }
 
 .inner .image-overlay {
-  @apply rounded-sm absolute inset-0 opacity-0 invisible bg-black/50 items-end flex p-5 overflow-hidden;
+  @apply invisible absolute inset-0 flex items-end overflow-hidden rounded-sm bg-black/50 p-5 opacity-0;
 }
 
 .image-overlay .image-caption {
-  @apply text-white m-0 text-xl;
+  @apply m-0 text-xl text-white;
 }
 
 .gslide-image img {
@@ -46,11 +46,11 @@
 .glightbox-clean .gclose,
 .glightbox-clean .gnext,
 .glightbox-clean .gprev {
-  @apply w-[30px] h-[30px] p-2 bg-white/20 #{!important};
+  @apply h-[30px] w-[30px] bg-white/20 p-2 #{!important};
 }
 .gslide iframe,
 .gslide video {
-  @apply rounded-sm overflow-hidden;
+  @apply overflow-hidden rounded-sm;
 }
 .desc-bottom .gslide-image img,
 .desc-top .gslide-image img {
@@ -65,10 +65,10 @@
 }
 .yarl__carousel {
   .yarl__slide.yarl__slide_current {
-    @apply flex flex-col my-4 #{!important};
+    @apply my-4 flex flex-col #{!important};
   }
   .yarl__slide_captions_container {
-    @apply bg-primary w-full h-[100px] flex items-center justify-center p-[15px];
+    @apply flex h-[100px] w-full items-center justify-center bg-primary p-[15px];
     .yarl__slide_description {
       @apply sm:mb-[20px] #{!important};
       br {
@@ -77,7 +77,7 @@
     }
   }
 }
-.yarl__slide_image{
-  @apply rounded-sm
+.yarl__slide_image {
+  @apply rounded-sm;
 }
 /* End Gallery  Styles */

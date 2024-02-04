@@ -8,7 +8,7 @@
 }
 
 .select-sizes .react-select__control {
-  @apply border-0 outline-0 border-white shadow-none #{!important};
+  @apply border-0 border-white shadow-none outline-0 #{!important};
 }
 .react-select__indicator-separator {
   @apply bg-bodybg #{!important};
@@ -46,7 +46,7 @@
   div {
     @apply border-[1px] border-white/10 #{!important};
     div {
-      @apply active:bg-bodybg hover:bg-bodybg focus:bg-bodybg border-0 #{!important};
+      @apply border-0 hover:bg-bodybg focus:bg-bodybg active:bg-bodybg #{!important};
     }
   }
 }
@@ -56,13 +56,13 @@
 }
 .dark {
   .Select2__option {
-    @apply active:bg-bodybg hover:bg-bodybg focus:bg-bodybg #{!important};
+    @apply hover:bg-bodybg focus:bg-bodybg active:bg-bodybg #{!important};
   }
   .Select2__menu {
     div {
       @apply border-[1px] border-white/10 #{!important};
       div {
-        @apply active:bg-bodybg hover:bg-bodybg focus:bg-bodybg border-0 #{!important};
+        @apply border-0 hover:bg-bodybg focus:bg-bodybg active:bg-bodybg #{!important};
       }
     }
   }
@@ -71,21 +71,21 @@
   }
 
   select {
-    @apply bg-bgdark border-white/10 text-white/30;
+    @apply border-white/10 bg-bgdark text-white/30;
   }
   .css-1nmdiq5-menu {
-    @apply bg-bgdark border-white/10 #{!important};
+    @apply border-white/10 bg-bgdark #{!important};
     div {
       &:hover,
       &:focus,
       &.active,
       &:active {
-        @apply bg-bgdark border-white/10 text-white #{!important};
+        @apply border-white/10 bg-bgdark text-white #{!important};
       }
     }
   }
   .react-select__menu {
-    @apply bg-white mt-[1px] border-white/10 #{!important};
+    @apply mt-[1px] border-white/10 bg-white #{!important};
   }
   .react-select__options:hover {
     @apply bg-bgdark text-white/70 #{!important};
@@ -98,7 +98,7 @@
     @apply bg-bgdark #{!important};
   }
   .react-select__control {
-    @apply bg-bgdark text-white/70 border #{!important};
+    @apply border bg-bgdark text-white/70 #{!important};
   }
   .billing-search .react-select__control {
     @apply border-0 border-black/20 #{!important};
@@ -115,7 +115,7 @@
   }
   .react-select__control,
   .css-t3ipsp-control {
-    @apply bg-bgdark border-white/10 #{!important};
+    @apply border-white/10 bg-bgdark #{!important};
     &:is(:hover, :focus, .active, :active) {
       @apply border-white/20 #{!important};
     }

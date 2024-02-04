@@ -1,7 +1,7 @@
 /* Start IconText-Menu Styles */
-[data-vertical-style="icontext"][toggled="icon-text-close"] {
+[data-vertical-style='icontext'][toggled='icon-text-close'] {
   @media screen and (min-width: 992px) {
-    &:not([icon-text="open"]) {
+    &:not([icon-text='open']) {
       .app-sidebar {
         @apply w-36;
         .slide__category,
@@ -11,7 +11,7 @@
         .side-menu__item {
           @apply block text-center text-xs;
           .side-menu__icon {
-            @apply mx-auto mb-2 w-full block;
+            @apply mx-auto mb-2 block w-full;
           }
         }
         .slide.has-sub {
@@ -52,7 +52,7 @@
         }
       }
     }
-    &[dir="ltr"] {
+    &[dir='ltr'] {
       .content {
         @apply ml-36;
       }
@@ -60,7 +60,7 @@
         @apply pl-36;
       }
     }
-    &[dir="rtl"] {
+    &[dir='rtl'] {
       .content {
         @apply mr-36;
       }

@@ -9,7 +9,7 @@
 }
 
 .tree-leaf .tree-expando {
-  @apply bg-gray-200 dark:bg-black/20 h-[15px] leading-[9px] p-[3px] w-[15px] top-[8px] #{!important};
+  @apply top-[8px] h-[15px] w-[15px] bg-gray-200 p-[3px] leading-[9px] dark:bg-black/20 #{!important};
 }
 .tree-leaf .tree-expando {
   @apply rtl:float-right;
@@ -18,6 +18,6 @@
   @apply rtl:float-right;
 }
 .tree-leaf .tree-child-leaves {
-  @apply rtl:mr-[15px] rtl:ml-0;
+  @apply rtl:ml-0 rtl:mr-[15px];
 }
 /* End TreeView  Styles */

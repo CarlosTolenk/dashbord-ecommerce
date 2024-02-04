@@ -3,12 +3,12 @@
   @apply w-2/6 #{!important};
 }
 .flatpickr-calendar.inline {
-  @apply relative block border border-gray-200 dark:border-white/10 border-double overflow-hidden;
+  @apply relative block overflow-hidden border border-double border-gray-200 dark:border-white/10;
 }
 
 .flatpickr-months .flatpickr-prev-month,
 .flatpickr-months .flatpickr-next-month {
-  @apply text-primary dark:text-primary fill-primary dark:fill-primary #{!important};
+  @apply fill-primary text-primary dark:fill-primary dark:text-primary #{!important};
 }
 .flatpickr-current-month {
   @apply pt-3 #{!important};
@@ -16,7 +16,7 @@
 
 .flatpickr-current-month,
 .numInput {
-  @apply text-gray-500 dark:text-white/70 fill-gray-500 dark:fill-gray-500;
+  @apply fill-gray-500 text-gray-500 dark:fill-gray-500 dark:text-white/70;
 }
 
 .flatpickr-current-month .flatpickr-monthDropdown-months:hover {
@@ -42,7 +42,7 @@ span.flatpickr-weekday {
 }
 
 .flatpickr-day {
-  @apply text-gray-500 dark:text-white/70 m-[1px] #{!important};
+  @apply m-[1px] text-gray-500 dark:text-white/70 #{!important};
 }
 
 .flatpickr-day.inRange,
@@ -57,7 +57,7 @@ span.flatpickr-weekday {
 .flatpickr-day:focus,
 .flatpickr-day.prevMonthDay:focus,
 .flatpickr-day.nextMonthDay:focus {
-  @apply border-gray-200 bg-gray-50 dark:bg-black/20 dark:border-white/10;
+  @apply border-gray-200 bg-gray-50 dark:border-white/10 dark:bg-black/20;
 }
 
 .flatpickr-monthDropdown-months {
@@ -96,9 +96,9 @@ span.flatpickr-weekday {
 }
 
 .flatpickr-day.today {
-  @apply bg-primary dark:bg-primary border-primary dark:border-primary text-white #{!important};
+  @apply border-primary bg-primary text-white dark:border-primary dark:bg-primary #{!important};
   &:hover {
-    @apply bg-primary dark:bg-primary border-primary dark:border-primary text-white #{!important};
+    @apply border-primary bg-primary text-white dark:border-primary dark:bg-primary #{!important};
   }
 }
 
@@ -114,7 +114,7 @@ span.flatpickr-weekday {
 .flatpickr-day:focus,
 .flatpickr-day.prevMonthDay:focus,
 .flatpickr-day.nextMonthDay:focus {
-  @apply bg-gray-50 dark:bg-black/20 border-gray-200 dark:border-white/10 #{!important};
+  @apply border-gray-200 bg-gray-50 dark:border-white/10 dark:bg-black/20 #{!important};
 }
 
 .flatpickr-day.selected,
@@ -135,11 +135,11 @@ span.flatpickr-weekday {
 .flatpickr-day.selected.nextMonthDay,
 .flatpickr-day.startRange.nextMonthDay,
 .flatpickr-day.endRange.nextMonthDay {
-  @apply bg-primary border-primary  text-white #{!important};
+  @apply border-primary bg-primary  text-white #{!important};
 }
 
 .flatpickr-calendar {
-  @apply rounded-sm bg-white shadow-lg dark:bg-bgdark border border-solid border-gray-200 dark:border-white/10 #{!important};
+  @apply rounded-sm border border-solid border-gray-200 bg-white shadow-lg dark:border-white/10 dark:bg-bgdark #{!important};
 
   &.arrowTop {
     @apply before:border-b-gray-200 after:border-b-gray-200 dark:before:border-b-white/10 dark:after:border-b-white/10;
@@ -181,7 +181,7 @@ span.flatpickr-weekday {
 
 .flatpickr-months .flatpickr-prev-month svg,
 .flatpickr-months .flatpickr-next-month svg {
-  @apply w-6 h-6 p-2 fill-primary dark:fill-white bg-gray-100 dark:bg-black/20 rounded-full  #{!important};
+  @apply h-6 w-6 rounded-full bg-gray-100 fill-primary p-2 dark:bg-black/20 dark:fill-white  #{!important};
 }
 
 .flatpickr-time input:hover,
@@ -198,7 +198,7 @@ span.flatpickr-weekday {
 .flatpickr-current-month
   .flatpickr-monthDropdown-months
   .flatpickr-monthDropdown-month {
-  @apply bg-white dark:bg-bgdark text-sm #{!important};
+  @apply bg-white text-sm dark:bg-bgdark #{!important};
 }
 
 .flatpickr-months .flatpickr-prev-month.flatpickr-prev-month {
@@ -211,7 +211,7 @@ span.flatpickr-weekday {
 
 .flatpickr-current-month .flatpickr-monthDropdown-months,
 .flatpickr-current-month input.cur-year {
-  @apply py-0 ltr:pl-0 rtl:pr-0 pr-[0.5ch] text-sm font-semibold text-center #{!important};
+  @apply py-0 pr-[0.5ch] text-center text-sm font-semibold ltr:pl-0 rtl:pr-0 #{!important};
 }
 
 .numInputWrapper:hover {
@@ -226,7 +226,7 @@ span.flatpickr-weekday {
 }
 
 .numInputWrapper span.arrowUp:after {
-  @apply border-x-[0.25rem] border-x-transparent border-b-[0.25rem] border-b-primary/50 dark:border-b-primary/50 top-[26%] #{!important};
+  @apply top-[26%] border-x-[0.25rem] border-b-[0.25rem] border-x-transparent border-b-primary/50 dark:border-b-primary/50 #{!important};
 }
 
 .flatpickr-current-month .numInputWrapper span.arrowDown:after {
@@ -234,7 +234,7 @@ span.flatpickr-weekday {
 }
 
 .numInputWrapper span.arrowDown:after {
-  @apply border-x-[0.25rem] border-x-transparent border-t-[0.25rem] border-t-primary/50 dark:border-b-primary/50 top-[40%] #{!important};
+  @apply top-[40%] border-x-[0.25rem] border-t-[0.25rem] border-x-transparent border-t-primary/50 dark:border-b-primary/50 #{!important};
 }
 
 span.flatpickr-weekday,
@@ -244,7 +244,7 @@ span.flatpickr-weekday,
 }
 
 .flatpickr-months .flatpickr-month {
-  @apply text-primary fill-primary h-[45px] #{!important};
+  @apply h-[45px] fill-primary text-primary #{!important};
 }
 .numInput:focus {
   @apply ring-transparent;

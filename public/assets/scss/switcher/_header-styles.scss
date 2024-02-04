@@ -1,17 +1,17 @@
 /* Start Header Styles */
-[data-header-styles="dark"] {
+[data-header-styles='dark'] {
   .header {
     --header-prime-color: 255 255 255;
-    @apply bg-bgdark border-white/10;
+    @apply border-white/10 bg-bgdark;
 
     .sidebar-toggle {
-      @apply bg-transparent hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+      @apply bg-transparent text-gray-400 hover:bg-black/20 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
       svg {
         @apply fill-white;
       }
     }
     .ti-dropdown-toggle {
-      @apply bg-transparent hover:bg-black/20 border-white/10 text-gray-400 hover:text-white focus:ring-offset-white/10;
+      @apply border-white/10 bg-transparent text-gray-400 hover:bg-black/20 hover:text-white focus:ring-offset-white/10;
       svg {
         @apply fill-white;
       }
@@ -28,7 +28,7 @@
     .header-search,
     .switcher-icon {
       button {
-        @apply bg-transparent hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+        @apply bg-transparent text-gray-400 hover:bg-black/20 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
         svg {
           @apply fill-white;
         }
@@ -37,7 +37,7 @@
     .header-theme-mode,
     .header-fullscreen {
       a {
-        @apply bg-transparent hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+        @apply bg-transparent text-gray-400 hover:bg-black/20 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
         svg {
           @apply fill-white;
         }
@@ -54,19 +54,19 @@
     }
   }
 }
-[data-header-styles="color"] {
+[data-header-styles='color'] {
   .header {
     --header-prime-color: 255 255 255;
-    @apply bg-primary border-white/20 bg-gradient-to-t from-black/30 to-black/30;
+    @apply border-white/20 bg-primary bg-gradient-to-t from-black/30 to-black/30;
 
     .sidebar-toggle {
-      @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-transparent focus:ring-offset-transparent;
+      @apply bg-transparent text-white hover:bg-black/20 hover:text-white focus:ring-transparent focus:ring-offset-transparent;
       svg {
         @apply fill-white;
       }
     }
     .ti-dropdown-toggle {
-      @apply bg-transparent hover:bg-black/20 border-white/20 text-white hover:text-white focus:ring-transparent focus:ring-offset-transparent;
+      @apply border-white/20 bg-transparent text-white hover:bg-black/20 hover:text-white focus:ring-transparent focus:ring-offset-transparent;
       svg {
         @apply fill-white;
       }
@@ -83,7 +83,7 @@
     .header-search,
     .switcher-icon {
       button {
-        @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
+        @apply bg-transparent text-white hover:bg-black/20 hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
       }
       svg {
         @apply fill-white;
@@ -92,7 +92,7 @@
     .header-theme-mode,
     .header-fullscreen {
       a {
-        @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
+        @apply bg-transparent text-white hover:bg-black/20 hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
       }
       svg {
         @apply fill-white;
@@ -109,19 +109,19 @@
     }
   }
 }
-[data-header-styles="gradient"] {
+[data-header-styles='gradient'] {
   .header {
     --header-prime-color: 255 255 255;
-    @apply bg-gradient-to-b from-primary to-secondary border-white/20 before:absolute before:h-full before:w-full before:inset-0 before:bg-gradient-to-t before:from-black/30 before:to-black/30 before:-z-[1];
+    @apply border-white/20 bg-gradient-to-b from-primary to-secondary before:absolute before:inset-0 before:-z-[1] before:h-full before:w-full before:bg-gradient-to-t before:from-black/30 before:to-black/30;
 
     .sidebar-toggle {
-      @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-transparent focus:ring-offset-transparent;
+      @apply bg-transparent text-white hover:bg-black/20 hover:text-white focus:ring-transparent focus:ring-offset-transparent;
       svg {
         @apply fill-white;
       }
     }
     .ti-dropdown-toggle {
-      @apply bg-transparent hover:bg-black/20 border-white/20 text-white hover:text-white focus:ring-transparent focus:ring-offset-transparent;
+      @apply border-white/20 bg-transparent text-white hover:bg-black/20 hover:text-white focus:ring-transparent focus:ring-offset-transparent;
       svg {
         @apply fill-white;
       }
@@ -138,7 +138,7 @@
     .header-search,
     .switcher-icon {
       button {
-        @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
+        @apply bg-transparent text-white hover:bg-black/20 hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
       }
       svg {
         @apply fill-white;
@@ -147,7 +147,7 @@
     .header-theme-mode,
     .header-fullscreen {
       a {
-        @apply bg-transparent hover:bg-black/20 text-white hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
+        @apply bg-transparent text-white hover:bg-black/20 hover:text-white focus:ring-black/20 focus:ring-offset-black/20;
       }
       svg {
         @apply fill-white;
@@ -164,16 +164,16 @@
     }
   }
 }
-[data-header-styles="light"] {
+[data-header-styles='light'] {
   .header {
     --header-prime-color: 128 135 147;
-    @apply bg-white border-gray-200;
+    @apply border-gray-200 bg-white;
 
     .sidebar-toggle {
       @apply bg-transparent text-gray-700 hover:bg-gray-50 focus:ring-0 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white;
     }
     .ti-dropdown-toggle {
-      @apply bg-transparent text-gray-700 hover:bg-gray-50 border-gray-200 focus:ring-offset-white focus:ring-primary;
+      @apply border-gray-200 bg-transparent text-gray-700 hover:bg-gray-50 focus:ring-primary focus:ring-offset-white;
     }
     #dropdown-profile {
       @apply focus:ring-gray-400;
@@ -207,16 +207,16 @@
     }
   }
 }
-[data-header-styles="transparent"] {
+[data-header-styles='transparent'] {
   .header {
     --header-prime-color: 128 135 147;
-    @apply bg-bodybg border-gray-200;
+    @apply border-gray-200 bg-bodybg;
 
     .sidebar-toggle {
       @apply bg-transparent text-gray-700 hover:bg-gray-50 focus:ring-0 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white;
     }
     .ti-dropdown-toggle {
-      @apply bg-transparent text-gray-700 hover:bg-gray-50 border-gray-200 focus:ring-offset-white focus:ring-primary;
+      @apply border-gray-200 bg-transparent text-gray-700 hover:bg-gray-50 focus:ring-primary focus:ring-offset-white;
     }
     #dropdown-profile {
       @apply focus:ring-gray-400;
@@ -255,13 +255,13 @@
       @apply border-white/10;
 
       .sidebar-toggle {
-        @apply hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+        @apply text-gray-400 hover:bg-black/20 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
         svg {
           @apply fill-white;
         }
       }
       .ti-dropdown-toggle {
-        @apply hover:bg-black/20 border-white/10 text-gray-400 hover:text-white focus:ring-offset-white/10;
+        @apply border-white/10 text-gray-400 hover:bg-black/20 hover:text-white focus:ring-offset-white/10;
         svg {
           @apply fill-white;
         }
@@ -278,7 +278,7 @@
       .header-search,
       .switcher-icon {
         button {
-          @apply hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+          @apply text-gray-400 hover:bg-black/20 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
           svg {
             @apply fill-white;
           }
@@ -287,7 +287,7 @@
       .header-theme-mode,
       .header-fullscreen {
         a {
-          @apply hover:bg-black/20 text-gray-400 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
+          @apply text-gray-400 hover:bg-black/20 hover:text-white focus:ring-white/10 focus:ring-offset-white/10;
           svg {
             @apply fill-white;
           }

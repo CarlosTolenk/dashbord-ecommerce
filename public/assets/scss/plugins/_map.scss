@@ -39,10 +39,10 @@
   @apply z-10 #{!important};
 }
 .jvm-zoom-btn {
-  @apply leading-[6px] dark:bg-white dark:text-gray-800 rtl:right-3 rtl:left-0 #{!important};
+  @apply leading-[6px] rtl:left-0 rtl:right-3 dark:bg-white dark:text-gray-800 #{!important};
 }
 .leaflet-marker-icon {
-  @apply w-7 h-7 #{!important};
+  @apply h-7 w-7 #{!important};
 }
 #jvm-markers-labels-group {
   text {
@@ -51,7 +51,7 @@
 }
 
 .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
-  @apply touch-none h-[18rem];
+  @apply h-[18rem] touch-none;
 }
 
 #map1,
@@ -59,8 +59,8 @@
   .leaflet-pane {
     &.leaflet-yellow-rectangle-pane,
     &.leaflet-overlay-pane {
-      path[class="leaflet-interactive"] {
-        @apply stroke-[rgb(var(--color-primary))] fill-[rgb(var(--color-primary))] #{!important};
+      path[class='leaflet-interactive'] {
+        @apply fill-[rgb(var(--color-primary))] stroke-[rgb(var(--color-primary))] #{!important};
       }
     }
   }
@@ -68,7 +68,7 @@
 #interactive-map {
   .leaflet-pane.leaflet-overlay-pane {
     svg {
-      rect[x="0"] {
+      rect[x='0'] {
         @apply fill-[rgb(var(--color-primary))] #{!important};
       }
     }

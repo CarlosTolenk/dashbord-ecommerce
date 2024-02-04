@@ -2,19 +2,19 @@
   /* Start Custom Styles */
 
   .main-content {
-    @apply sm:px-7 px-6;
+    @apply px-6 sm:px-7;
   }
 
   .content {
-    @apply lg:ltr:ml-64 lg:rtl:mr-64 mt-[71px] transition-all ltr:ml-0 rtl:mr-0;
+    @apply mt-[71px] transition-all ltr:ml-0 lg:ltr:ml-64 rtl:mr-0 lg:rtl:mr-64;
   }
-  
+
   .page-header {
     @apply py-5;
   }
 
   pre {
-    @apply border-gray-200 border bg-slate-200 text-[0.75rem] p-5;
+    @apply border border-gray-200 bg-slate-200 p-5 text-[0.75rem];
   }
 
   html {
@@ -22,31 +22,31 @@
   }
 
   body {
-    @apply bg-bodybg h-full text-gray-600 dark:text-white m-0 font-inter font-normal text-sm relative;
+    @apply relative m-0 h-full bg-bodybg font-inter text-sm font-normal text-gray-600 dark:text-white;
   }
 
   .page {
-    @apply flex flex-col h-full min-h-screen;
+    @apply flex h-full min-h-screen flex-col;
   }
 
   ::-webkit-scrollbar {
-    @apply w-[2px] h-[5px] bg-black/10 dark:bg-black/20;
+    @apply h-[5px] w-[2px] bg-black/10 dark:bg-black/20;
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply w-[2px] h-[2px] bg-black/10 dark:bg-black/20;
+    @apply h-[2px] w-[2px] bg-black/10 dark:bg-black/20;
   }
 
   code {
-    @apply text-danger text-sm;
+    @apply text-sm text-danger;
   }
 
   .icons-list {
-    @apply list-none mt-0 ltr:-mr-[1px] rtl:-ml-[1px] -mb-[1px] ml-0 p-0 flex flex-wrap;
+    @apply -mb-[1px] ml-0 mt-0 flex list-none flex-wrap p-0 ltr:-mr-[1px] rtl:-ml-[1px];
   }
 
   .icons-list .icons-list-item {
-    @apply flex flex-col text-center p-2 no-underline relative items-center justify-center border border-gray-200 dark:border-white/10 rounded-md;
+    @apply relative flex flex-col items-center justify-center rounded-md border border-gray-200 p-2 text-center no-underline dark:border-white/10;
 
     &:hover {
       i {
@@ -60,7 +60,7 @@
   }
 
   .icon-label {
-    @apply text-gray-500 dark:text-white/70 text-xs mt-4;
+    @apply mt-4 text-xs text-gray-500 dark:text-white/70;
   }
 
   .simplebar-scrollbar:before {
@@ -71,16 +71,16 @@
     @apply w-2 #{!important};
   }
 
-  [dir="ltr"] {
-    &[toggled="icon-overlay-close"] {
+  [dir='ltr'] {
+    &[toggled='icon-overlay-close'] {
       .content {
         @apply lg:ml-24;
       }
     }
   }
 
-  [dir="rtl"] {
-    &[toggled="icon-overlay-close"] {
+  [dir='rtl'] {
+    &[toggled='icon-overlay-close'] {
       .content {
         @apply lg:mr-24;
       }
@@ -89,7 +89,7 @@
 
   /* Start:: Back to Top */
   .scrollToTop {
-    @apply bg-primary text-white fixed bottom-8 ltr:right-8 rtl:left-8 items-center justify-center text-center hidden z-[10000] h-10 w-10 bg-no-repeat bg-center transition ease-linear duration-[0.1s] rounded-md shadow-md;
+    @apply fixed bottom-8 z-[10000] hidden h-10 w-10 items-center justify-center rounded-md bg-primary bg-center bg-no-repeat text-center text-white shadow-md transition duration-[0.1s] ease-linear ltr:right-8 rtl:left-8;
   }
   /* Start:: Back to Top */
   select option:active,
@@ -99,18 +99,20 @@
   }
 
   /* End Custom Styles */
-  select{
-    @apply rtl:bg-[left_0.5rem_center]  ltr:pr-9 ltr:pl-2 rtl:pl-9 rtl:pr-2 ;
+  select {
+    @apply ltr:pl-2  ltr:pr-9 rtl:bg-[left_0.5rem_center] rtl:pl-9 rtl:pr-2;
   }
-  #drag-right,#drag-center ,#drag-left {
-    .box{
+  #drag-right,
+  #drag-center,
+  #drag-left {
+    .box {
       @apply touch-none;
     }
   }
   #responsive-overlay {
-    @apply transition-all duration-100 fixed inset-0 z-[49] bg-gray-900 invisible bg-opacity-0 ;
+    @apply invisible fixed inset-0 z-[49] bg-gray-900 bg-opacity-0 transition-all duration-100;
     &.active {
-      @apply  bg-opacity-50 dark:bg-opacity-80 visible;
+      @apply visible bg-opacity-50 dark:bg-opacity-80;
     }
   }
 }

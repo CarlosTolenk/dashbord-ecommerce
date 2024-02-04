@@ -7,7 +7,7 @@
     @apply min-w-full;
 
     th {
-      @apply px-6 py-3 text-start font-semibold text-xs uppercase bg-gray-50 dark:bg-black/20 dark:text-white;
+      @apply bg-gray-50 px-6 py-3 text-start text-xs font-semibold uppercase dark:bg-black/20 dark:text-white;
     }
 
     tbody {
@@ -15,7 +15,7 @@
     }
 
     td {
-      @apply px-6 py-4 whitespace-nowrap text-sm dark:text-gray-200 font-medium;
+      @apply whitespace-nowrap px-6 py-4 text-sm font-medium dark:text-gray-200;
     }
   }
   .ti-striped-table {
@@ -36,7 +36,7 @@
     @apply border dark:border-white/10;
 
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-gray-200 dark:divide-white/10;
+      @apply divide-x divide-gray-200 rtl:divide-x-reverse dark:divide-white/10;
     }
   }
   .table-bordered-primary {
@@ -49,7 +49,7 @@
       @apply divide-y divide-primary/30 dark:divide-primary/30;
     }
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-primary/30 dark:divide-primary/30;
+      @apply divide-x divide-primary/30 rtl:divide-x-reverse dark:divide-primary/30;
     }
   }
   .table-bordered-secondary {
@@ -62,7 +62,7 @@
       @apply divide-y divide-secondary/30 dark:divide-secondary/30;
     }
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-secondary/30 dark:divide-secondary/30;
+      @apply divide-x divide-secondary/30 rtl:divide-x-reverse dark:divide-secondary/30;
     }
   }
   .table-bordered-warning {
@@ -75,7 +75,7 @@
       @apply divide-y divide-warning/30 dark:divide-warning/30;
     }
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-warning/30 dark:divide-warning/30;
+      @apply divide-x divide-warning/30 rtl:divide-x-reverse dark:divide-warning/30;
     }
   }
   .table-bordered-danger {
@@ -88,7 +88,7 @@
       @apply divide-y divide-danger/30 dark:divide-danger/30;
     }
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-danger/30 dark:divide-danger/30;
+      @apply divide-x divide-danger/30 rtl:divide-x-reverse dark:divide-danger/30;
     }
   }
   .table-bordered-info {
@@ -101,7 +101,7 @@
       @apply divide-y divide-info/30 dark:divide-info/30;
     }
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-info/30 dark:divide-info/30;
+      @apply divide-x divide-info/30 rtl:divide-x-reverse dark:divide-info/30;
     }
   }
   .table-bordered-success {
@@ -114,7 +114,7 @@
       @apply divide-y divide-success/30 dark:divide-success/30;
     }
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-success/30 dark:divide-success/30;
+      @apply divide-x divide-success/30 rtl:divide-x-reverse dark:divide-success/30;
     }
   }
   .table-primary {
@@ -132,7 +132,7 @@
     }
 
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-primary/10 dark:divide-primary/10;
+      @apply divide-x divide-primary/10 rtl:divide-x-reverse dark:divide-primary/10;
     }
 
     .ti-custom-table-head {
@@ -154,7 +154,7 @@
     }
 
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-secondary/10 dark:divide-secondary/10;
+      @apply divide-x divide-secondary/10 rtl:divide-x-reverse dark:divide-secondary/10;
     }
 
     .ti-custom-table-head {
@@ -176,7 +176,7 @@
     }
 
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-warning/10 dark:divide-warning/10;
+      @apply divide-x divide-warning/10 rtl:divide-x-reverse dark:divide-warning/10;
     }
 
     .ti-custom-table-head {
@@ -198,7 +198,7 @@
     }
 
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-info/10 dark:divide-info/10;
+      @apply divide-x divide-info/10 rtl:divide-x-reverse dark:divide-info/10;
     }
 
     .ti-custom-table-head {
@@ -220,7 +220,7 @@
     }
 
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-danger/10 dark:divide-danger/10;
+      @apply divide-x divide-danger/10 rtl:divide-x-reverse dark:divide-danger/10;
     }
 
     .ti-custom-table-head {
@@ -242,7 +242,7 @@
     }
 
     tr {
-      @apply divide-x rtl:divide-x-reverse divide-success/10 dark:divide-success/10;
+      @apply divide-x divide-success/10 rtl:divide-x-reverse dark:divide-success/10;
     }
 
     .ti-custom-table-head {
@@ -286,7 +286,7 @@
     }
   }
   .sortable-input {
-    @apply p-[10px] border flex w-6/12 #{!important};
+    @apply flex w-6/12 border p-[10px] #{!important};
 
     p {
       @apply ms-[5px] font-medium;

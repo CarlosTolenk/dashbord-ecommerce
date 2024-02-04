@@ -1,13 +1,14 @@
 /* Start Calendar  Styles */
 #external-events .fc-event {
-  @apply rounded-sm my-1 py-2 px-3;
+  @apply my-1 rounded-sm px-3 py-2;
 }
 .fc-theme-standard td,
 .fc-theme-standard th {
   @apply border-gray-200 dark:border-white/10 #{!important};
 }
-.fc .fc-button ,.fc-daygrid-event{
-  @apply rounded-sm #{!important}
+.fc .fc-button,
+.fc-daygrid-event {
+  @apply rounded-sm #{!important};
 }
 
 .fc .fc-button:focus {
@@ -21,24 +22,24 @@
 }
 
 .fc-h-event {
-  @apply text-white bg-primary border-primary;
+  @apply border-primary bg-primary text-white;
 }
 
 .fc .fc-button-primary {
-  @apply text-white bg-primary border-primary #{!important};
+  @apply border-primary bg-primary text-white #{!important};
 }
 
 .fc .fc-button-primary:hover {
-  @apply text-white bg-primary/80 border-primary/80 #{!important};
+  @apply border-primary/80 bg-primary/80 text-white #{!important};
 }
 
 .fc .fc-button-primary:disabled {
-  @apply text-white bg-primary/80 border-primary/80 #{!important};
+  @apply border-primary/80 bg-primary/80 text-white #{!important};
 }
 
 .fc .fc-button-primary:not(:disabled).fc-button-active,
 .fc .fc-button-primary:not(:disabled):active {
-  @apply text-white bg-primary/80 border-primary/80 #{!important};
+  @apply border-primary/80 bg-primary/80 text-white #{!important};
 }
 
 .fc-theme-standard .fc-scrollgrid {
@@ -58,14 +59,14 @@
 }
 
 .fc .fc-scrollgrid {
-  @apply rounded-sm overflow-hidden;
+  @apply overflow-hidden rounded-sm;
 }
 
 .fc .fc-bg-event,
 .fc .fc-highlight,
 .fc .fc-non-business,
 .fc .fc-view-harness-active > .fc-view {
-  @apply rounded-sm overflow-hidden;
+  @apply overflow-hidden rounded-sm;
 }
 
 .fc .fc-cell-shaded,
@@ -96,8 +97,8 @@
 
 //Activity
 .fullcalendar-events-activity li {
-  @apply mb-3 text-sm py-1 ltr:pl-8 rtl:pr-8 relative before:absolute before:w-3 before:h-3 before:border before:border-primary before:rounded-sm before:bg-transparent ltr:before:left-1 rtl:before:right-1 before:top-[0.563rem]
-        after:absolute after:h-full after:bg-transparent ltr:after:border-l-2 rtl:after:border-r-2 after:border-dashed after:border-primary/10 ltr:after:left-[0.563rem] rtl:after:right-[0.563rem] after:top-5;
+  @apply relative mb-3 py-1 text-sm before:absolute before:top-[0.563rem] before:h-3 before:w-3 before:rounded-sm before:border before:border-primary before:bg-transparent after:absolute after:top-5 after:h-full after:border-dashed
+        after:border-primary/10 after:bg-transparent ltr:pl-8 ltr:before:left-1 ltr:after:left-[0.563rem] ltr:after:border-l-2 rtl:pr-8 rtl:before:right-1 rtl:after:right-[0.563rem] rtl:after:border-r-2;
 }
 .fullcalendar-events-activity li:last-child {
   @apply mb-0;
@@ -110,20 +111,20 @@
   @apply max-h-44;
 }
 .fc-col-header-cell .fc-scrollgrid-sync-inner {
-  @apply p-2 flex justify-center;
+  @apply flex justify-center p-2;
 }
 .fc-direction-ltr .fc-daygrid-event.fc-event-start,
 .fc-direction-rtl .fc-daygrid-event.fc-event-end {
   @apply px-2;
 }
 .fc .fc-day-other .fc-daygrid-day-top {
-  @apply opacity-100 text-gray-500 dark:text-white/70 #{!important};
+  @apply text-gray-500 opacity-100 dark:text-white/70 #{!important};
 }
 .fc-theme-standard .fc-popover {
-  @apply border-gray-200 dark:border-white/10 bg-white dark:bg-bgdark2;
+  @apply border-gray-200 bg-white dark:border-white/10 dark:bg-bgdark2;
 }
 .fc-header-toolbar {
-  @apply md:flex block md:space-y-0 space-y-2 #{!important};
+  @apply block space-y-2 md:flex md:space-y-0 #{!important};
 }
 .fc .fc-list-sticky .fc-list-day > * {
   @apply bg-gray-100 dark:bg-black/20;
@@ -131,11 +132,11 @@
 .fc-event-dragging {
   @apply px-2 py-2;
 }
-.fc .fc-daygrid-day-bottom{
-  @apply text-[0.44em] pt-0 #{!important};
+.fc .fc-daygrid-day-bottom {
+  @apply pt-0 text-[0.44em] #{!important};
 }
 
-//New 
+//New
 
 .fc-direction-ltr .fc-button-group > .fc-button {
   &:not(:last-child) {

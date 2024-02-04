@@ -4,63 +4,63 @@
 }
 
 #messagelist {
-  @apply h-[calc(100vh-500px)] max-h-full relative overflow-auto;
+  @apply relative h-[calc(100vh-500px)] max-h-full overflow-auto;
 }
 
 #chatlist {
-  @apply h-[calc(100vh-320px)] max-h-full relative overflow-auto;
+  @apply relative h-[calc(100vh-320px)] max-h-full overflow-auto;
 }
 
 #profile-list {
-  @apply h-[calc(100vh-160px)] max-h-full relative overflow-y-auto overflow-x-hidden;
+  @apply relative h-[calc(100vh-160px)] max-h-full overflow-y-auto overflow-x-hidden;
 }
 
 .main-chat-content {
-  @apply h-[calc(100vh-261px)] overflow-hidden relative;
+  @apply relative h-[calc(100vh-261px)] overflow-hidden;
 }
 
 .main-chat-content2 {
-  @apply h-[calc(100vh-313px)] overflow-hidden relative;
+  @apply relative h-[calc(100vh-313px)] overflow-hidden;
 }
 
 .main-chat-content3 {
-  @apply h-[calc(100vh-160px)] overflow-hidden relative;
+  @apply relative h-[calc(100vh-160px)] overflow-hidden;
 }
 
 .chat-left {
-  @apply flex items-start justify-start mb-5 space-x-3 rtl:space-x-reverse;
+  @apply mb-5 flex items-start justify-start space-x-3 rtl:space-x-reverse;
 }
 
 .chat-right {
-  @apply flex items-start justify-end mb-5 space-x-3 rtl:space-x-reverse;
+  @apply mb-5 flex items-start justify-end space-x-3 rtl:space-x-reverse;
 }
 
 .chat-inner-msg {
-  @apply sm:max-w-xl max-w-[10rem];
+  @apply max-w-[10rem] sm:max-w-xl;
 }
 
 .chat-lable {
-  @apply text-center mb-5;
+  @apply mb-5 text-center;
 }
 
 .chat-msg-text {
-  @apply sm:max-w-[15rem] max-w-[10rem] truncate;
+  @apply max-w-[10rem] truncate sm:max-w-[15rem];
 }
 
 .online {
-  @apply absolute bottom-[2px] ltr:right-0 rtl:left-0 block h-2 w-2 rounded-full ring-2 ring-white bg-green-400;
+  @apply absolute bottom-[2px] block h-2 w-2 rounded-full bg-green-400 ring-2 ring-white ltr:right-0 rtl:left-0;
 }
 
 .offline {
-  @apply absolute bottom-[2px] ltr:right-0 rtl:left-0 block h-2 w-2 rounded-full ring-2 ring-white bg-gray-400;
+  @apply absolute bottom-[2px] block h-2 w-2 rounded-full bg-gray-400 ring-2 ring-white ltr:right-0 rtl:left-0;
 }
 
 .main-chart-wrapper .chat-user-details.open {
-  @apply block ltr:right-0 rtl:left-0 bottom-2;
+  @apply bottom-2 block ltr:right-0 rtl:left-0;
 }
 
 .main-chart-wrapper {
-  @apply relative my-0 -mx-5;
+  @apply relative -mx-5 my-0;
 
   .chat-users-tab,
   .chat-groups-tab,
@@ -138,14 +138,14 @@
 
     .active-chat {
       .swiper-slide {
-        @apply md:w-[6%] m-0 #{!important};
+        @apply m-0 md:w-[6%] #{!important};
       }
     }
   }
 
   @media (max-width: 1600px) {
     .chat-user-details {
-      @apply hidden sm:absolute relative;
+      @apply relative hidden sm:absolute;
     }
 
     .main-chat-right-icons .responsive-userinfo-open {
@@ -179,7 +179,7 @@
     .main-chat-msg
     div
     .chat-media-image {
-    @apply w-10 h-10;
+    @apply h-10 w-10;
   }
 
   .main-chart-wrapper .main-chat-content3 {
@@ -191,7 +191,7 @@
   @apply w-2 sm:w-auto;
 }
 .search-chat-input {
-  @apply transition-[width] duration-[0.3s] ease-in-out sm:w-36 w-20 hidden;
+  @apply hidden w-20 transition-[width] duration-[0.3s] ease-in-out sm:w-36;
 }
 .search-chat-input.active {
   @apply block;

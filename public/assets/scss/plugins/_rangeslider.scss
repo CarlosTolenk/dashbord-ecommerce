@@ -13,7 +13,7 @@
 }
 
 .rangeslider__handle {
-  @apply border-gray-200 dark:border-white/10 top-[55%] #{!important};
+  @apply top-[55%] border-gray-200 dark:border-white/10 #{!important};
 }
 
 .rangeslider__fill,
@@ -23,7 +23,7 @@
 
 //********Start Nousislider********//
 .noUi-target {
-  @apply bg-gray-50 dark:bg-black/20 border-gray-200 dark:border-white/10 shadow-none #{!important};
+  @apply border-gray-200 bg-gray-50 shadow-none dark:border-white/10 dark:bg-black/20 #{!important};
 }
 
 .noUi-connect {
@@ -32,7 +32,7 @@
 
 #slider-round {
   .noUi-handle {
-    @apply h-5 w-5 rounded-full bg-primary border-gray-200 dark:border-white/10 shadow-sm before:hidden after:hidden #{!important};
+    @apply h-5 w-5 rounded-full border-gray-200 bg-primary shadow-sm before:hidden after:hidden dark:border-white/10 #{!important};
   }
 }
 
@@ -40,7 +40,7 @@
   @apply rounded-none #{!important};
 
   .noUi-handle {
-    @apply border-0 shadow-none rounded-none bg-primary h-5 w-5 before:hidden after:hidden #{!important};
+    @apply h-5 w-5 rounded-none border-0 bg-primary shadow-none before:hidden after:hidden #{!important};
   }
 }
 
@@ -51,11 +51,11 @@
 }
 
 #colorpicker {
-  @apply h-60 w-80 mx-auto my-0 p-3 border-gray-200 dark:border-white/10 #{!important};
+  @apply mx-auto my-0 h-60 w-80 border-gray-200 p-3 dark:border-white/10 #{!important};
 }
 
 #result {
-  @apply bg-gray-50 dark:bg-black/20 my-16 mx-2 h-24 w-24 inline-block align-top text-gray-500 dark:text-white/70 border-gray-200 dark:border-white/10 shadow-sm;
+  @apply mx-2 my-16 inline-block h-24 w-24 border-gray-200 bg-gray-50 align-top text-gray-500 shadow-sm dark:border-white/10 dark:bg-black/20 dark:text-white/70;
 }
 
 #color1 .noUi-connect {
@@ -135,11 +135,11 @@
 #slider-round,
 #slider-square {
   &.noUi-horizontal .noUi-handle {
-    @apply ltr:-right-4 rtl:-left-4 -top-[2px] #{!important};
+    @apply -top-[2px] ltr:-right-4 rtl:-left-4 #{!important};
   }
 }
 .noUi-handle {
-  @apply border-gray-200 dark:border-white/10 bg-white dark:bg-bgdark dark:shadow-sm;
+  @apply border-gray-200 bg-white dark:border-white/10 dark:bg-bgdark dark:shadow-sm;
 }
 .noUi-value-horizontal {
   @apply dark:text-white;

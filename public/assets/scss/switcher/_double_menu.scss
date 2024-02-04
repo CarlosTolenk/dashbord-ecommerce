@@ -1,5 +1,5 @@
 /* Start Double-Menu Styles */
-[data-vertical-style="doublemenu"] {
+[data-vertical-style='doublemenu'] {
   @media screen and (min-width: 992px) {
     .app-sidebar {
       .slide {
@@ -8,7 +8,7 @@
         }
       }
       .main-sidebar {
-        @apply overflow-visible h-[90%];
+        @apply h-[90%] overflow-visible;
       }
 
       .main-sidebar-header {
@@ -37,7 +37,7 @@
           @apply mt-0 #{!important};
           .slide {
             .side-menu__item {
-              @apply text-start flex;
+              @apply flex text-start;
 
               &:before {
                 @apply top-[0.938rem];
@@ -46,7 +46,7 @@
           }
 
           .side-menu__angle {
-            @apply block  top-[0.65rem];
+            @apply top-[0.65rem]  block;
           }
         }
       }
@@ -61,7 +61,7 @@
       }
 
       .slide.has-sub .slide-menu.child1 {
-        @apply absolute  bg-white dark:bg-bgdark transition-none h-full top-0 overflow-auto  #{!important};
+        @apply absolute  top-0 h-full overflow-auto bg-white transition-none dark:bg-bgdark  #{!important};
         .slide {
           @apply px-3;
         }
@@ -79,7 +79,7 @@
       @apply px-[1.219rem];
     }
     #sidebar-scroll {
-      @apply overflow-y-visible  mt-0;
+      @apply mt-0  overflow-y-visible;
       .main-menu-container {
         @apply mt-[4.45rem];
       }
@@ -109,7 +109,7 @@
       }
     }
     .side-menu__label1 {
-      @apply block text-base font-semibold text-primary border-b border-gray-200 py-6 px-4 h-[3.95rem] mb-4 #{!important};
+      @apply mb-4 block h-[3.95rem] border-b border-gray-200 px-4 py-6 text-base font-semibold text-primary #{!important};
     }
     &.dark {
       .slide-menu.child1 {
@@ -137,7 +137,7 @@
     .double-menu-active {
       @apply block #{!important};
     }
-    &[toggled="double-menu-close"] {
+    &[toggled='double-menu-close'] {
       .slide.has-sub .slide-menu.child1 {
         @apply hidden #{!important};
       }
@@ -145,7 +145,7 @@
         @apply block #{!important};
       }
     }
-    &[dir="ltr"] {
+    &[dir='ltr'] {
       .app-sidebar {
         .slide-menu {
           &.child1 {
@@ -183,7 +183,7 @@
       .header {
         @apply pl-20;
       }
-      &[toggled="double-menu-open"] {
+      &[toggled='double-menu-open'] {
         .content {
           @apply ml-[19rem];
         }
@@ -191,7 +191,7 @@
           @apply pl-[19rem];
         }
       }
-      &[toggled="double-menu-close"] {
+      &[toggled='double-menu-close'] {
         .content {
           @apply ml-20;
         }
@@ -200,7 +200,7 @@
         }
       }
     }
-    &[dir="rtl"] {
+    &[dir='rtl'] {
       .app-sidebar {
         .slide-menu {
           &.child1 {
@@ -209,7 +209,7 @@
               @apply right-0;
 
               .side-menu__item {
-                @apply pr-8 pl-4;
+                @apply pl-4 pr-8;
 
                 &:before {
                   @apply right-3;
@@ -238,7 +238,7 @@
       .header {
         @apply pr-20;
       }
-      &[toggled="double-menu-open"] {
+      &[toggled='double-menu-open'] {
         .content {
           @apply mr-[19rem];
         }
@@ -246,7 +246,7 @@
           @apply pr-[19rem];
         }
       }
-      &[toggled="double-menu-close"] {
+      &[toggled='double-menu-close'] {
         .content {
           @apply mr-20;
         }
@@ -257,8 +257,8 @@
     }
   }
 }
-@media screen and (min-width: 992px){
-  [data-vertical-style="doublemenu"] #sidebar-scroll {
+@media screen and (min-width: 992px) {
+  [data-vertical-style='doublemenu'] #sidebar-scroll {
     @apply overflow-hidden #{!important};
   }
 }

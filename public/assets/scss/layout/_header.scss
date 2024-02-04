@@ -1,6 +1,6 @@
 /* Start Header Styles */
 .header {
-  @apply h-[71px] transition-all fixed top-0 inset-x-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-[48] w-full bg-white border-b text-sm sm:py-4 lg:ltr:pl-64 lg:rtl:pr-64 dark:bg-bgdark dark:border-white/10 py-4;
+  @apply fixed inset-x-0 top-0 z-[48] flex h-[71px] w-full flex-wrap border-b bg-white py-4 text-sm transition-all sm:flex-nowrap sm:justify-start sm:py-4 lg:ltr:pl-64 lg:rtl:pr-64 dark:border-white/10 dark:bg-bgdark;
   &.sticky-pin {
     @apply fixed;
   }
@@ -17,11 +17,11 @@
   }
 
   .main-header {
-    @apply flex basis-full items-center w-full mx-auto px-4 sm:px-6;
+    @apply mx-auto flex w-full basis-full items-center px-4 sm:px-6;
   }
 
   .header-content {
-    @apply w-full flex items-center ltr:ml-auto rtl:mr-auto gap-x-3 order-3;
+    @apply order-3 flex w-full items-center gap-x-3 ltr:ml-auto rtl:mr-auto;
   }
 
   .header-left {
@@ -41,12 +41,12 @@
   }
 }
 
-.header-icon{
+.header-icon {
   @apply text-lg text-headerprime;
 }
 
 .search-btn {
-  @apply absolute inset-y-0 ltr:left-0 rtl:right-0 flex items-center cursor-pointer z-20 ltr:pl-4 rtl:pr-4;
+  @apply absolute inset-y-0 z-20 flex cursor-pointer items-center ltr:left-0 ltr:pl-4 rtl:right-0 rtl:pr-4;
 
   .search-btn-icon {
     @apply h-4 w-4 text-gray-400;
@@ -54,7 +54,7 @@
 }
 
 .voice-search {
-  @apply absolute inset-y-0 rtl:left-0 ltr:right-0 flex items-center cursor-pointer z-20 rtl:pl-4 ltr:pr-4 ltr:mr-5 rtl:ml-5;
+  @apply absolute inset-y-0 z-20 flex cursor-pointer items-center ltr:right-0 ltr:mr-5 ltr:pr-4 rtl:left-0 rtl:ml-5 rtl:pl-4;
 
   .voice-btn-icon {
     @apply h-4 w-4 text-gray-400;
@@ -62,69 +62,71 @@
 }
 
 .search-dropdown {
-  @apply absolute inset-y-0 rtl:left-0 ltr:right-0 flex items-center cursor-pointer z-20 rtl:pl-4 ltr:pr-4;
+  @apply absolute inset-y-0 z-20 flex cursor-pointer items-center ltr:right-0 ltr:pr-4 rtl:left-0 rtl:pl-4;
 
   .search-dropdown-btn-icon {
     @apply h-4 w-4 text-gray-400;
   }
 }
-[toggled="icon-overlay-close"] {
+[toggled='icon-overlay-close'] {
   .header {
     .sidebar-toggle {
       @apply rotate-180;
     }
   }
 }
-[data-vertical-style="detached"]:not([toggled="detached-close"]),
-[data-vertical-style="doublemenu"]:not([toggled="double-menu-open"]),
-[data-vertical-style="icontext"][toggled="icon-text-close"],
-[data-vertical-style="closed"][toggled="close-menu-close"],
-[data-nav-layout="vertical"][toggled="menu-click-closed"],
-[data-nav-layout="vertical"][toggled="menu-hover-closed"], 
-[data-nav-layout="vertical"][toggled="icon-click-closed"], 
-[data-nav-layout="vertical"][toggled="icon-hover-closed"] {
+[data-vertical-style='detached']:not([toggled='detached-close']),
+[data-vertical-style='doublemenu']:not([toggled='double-menu-open']),
+[data-vertical-style='icontext'][toggled='icon-text-close'],
+[data-vertical-style='closed'][toggled='close-menu-close'],
+[data-nav-layout='vertical'][toggled='menu-click-closed'],
+[data-nav-layout='vertical'][toggled='menu-hover-closed'],
+[data-nav-layout='vertical'][toggled='icon-click-closed'],
+[data-nav-layout='vertical'][toggled='icon-hover-closed'] {
   .header {
-      .sidebar-toggle {
-        @apply rotate-180;
-      }
+    .sidebar-toggle {
+      @apply rotate-180;
     }
+  }
 }
-[dir="ltr"] {
-  &[toggled="icon-overlay-close"] {
+[dir='ltr'] {
+  &[toggled='icon-overlay-close'] {
     .header {
       @apply lg:pl-24;
     }
   }
 }
 
-[dir="rtl"] {
-  &[toggled="icon-overlay-close"] {
+[dir='rtl'] {
+  &[toggled='icon-overlay-close'] {
     .header {
       @apply lg:pr-24;
     }
   }
 }
 .header-link {
-  @apply absolute h-full w-full z-10 inset-x-0 top-0;
+  @apply absolute inset-x-0 top-0 z-10 h-full w-full;
 }
-.header-cart,.header-notification,.header-apps {
+.header-cart,
+.header-notification,
+.header-apps {
   .ti-dropdown-divider {
     @apply py-0;
   }
   .ti-dropdown-menu {
-    @apply p-0 shadow-lg border border-gray-200 dark:border-white/20;
+    @apply border border-gray-200 p-0 shadow-lg dark:border-white/20;
   }
-  .ti-dropdown-header{
+  .ti-dropdown-header {
     @apply m-0;
   }
 }
 .header-notification {
-  .header-remove-btn{
+  .header-remove-btn {
     @apply hidden;
   }
-  .header-box{
+  .header-box {
     &:hover {
-      .header-remove-btn{
+      .header-remove-btn {
         @apply flex;
       }
     }

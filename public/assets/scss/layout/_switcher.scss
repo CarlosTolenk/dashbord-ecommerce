@@ -1,6 +1,6 @@
 /* Start switcher Styles */
 #hs-overlay-switcher {
-  @apply sm:w-96 w-80 z-[1000000000];
+  @apply z-[1000000000] w-80 sm:w-96;
 
   .ti-offcanvas-header {
     @apply bg-white dark:bg-bgdark;
@@ -10,11 +10,11 @@
     @apply bg-white dark:bg-bgdark;
   }
   .ti-offcanvas-footer {
-    @apply flex justify-between z-[32] py-3 px-4 absolute bottom-0 bg-white dark:bg-bgdark border-t dark:border-white/10 shadow-lg w-full;
+    @apply absolute bottom-0 z-[32] flex w-full justify-between border-t bg-white px-4 py-3 shadow-lg dark:border-white/10 dark:bg-bgdark;
   }
 
   .switcher-style-head {
-    @apply text-sm font-medium mb-0 bg-primary/10 text-primary px-3 py-2 leading-none;
+    @apply mb-0 bg-primary/10 px-3 py-2 text-sm font-medium leading-none text-primary;
   }
 
   #switcher-body {
@@ -33,15 +33,15 @@
     @apply space-y-6;
 
     .switch-select {
-      .ti-form-radio[type="radio"]:checked {
+      .ti-form-radio[type='radio']:checked {
         // @apply shadow-[0_0px_1px_5px_rgba(255,255,255,0.8)];
-        @apply border-4 border-gray-200 dark:border-white/10 p-2 bg-none;
+        @apply border-4 border-gray-200 bg-none p-2 dark:border-white/10;
       }
 
       .color-input {
-        @apply w-8 h-8 rounded-md border border-gray-200 dark:border-white/10;
+        @apply h-8 w-8 rounded-md border border-gray-200 dark:border-white/10;
 
-        &.color-white.ti-form-radio[type="radio"]:checked {
+        &.color-white.ti-form-radio[type='radio']:checked {
           @apply shadow-md;
         }
 
@@ -60,7 +60,6 @@
         &.color-gradient {
           @apply bg-gradient-to-r from-primary to-secondary;
         }
-
 
         &.color-primary {
           @apply bg-primary;
@@ -119,19 +118,19 @@
 
     .pickr-container-primary .pickr .pcr-button::after,
     .pickr-container-background .pickr .pcr-button::after {
-      @apply content-["\efc3"] font-['remixicon'] text-white/70 leading-loose #{!important};
+      @apply font-['remixicon'] leading-loose text-white/70 content-["\efc3"] #{!important};
     }
   }
 
   .menu-image {
     .bgimage-input {
-      @apply w-12 h-20 rounded-md border-0 bg-center bg-cover bg-no-repeat;
+      @apply h-20 w-12 rounded-md border-0 bg-cover bg-center bg-no-repeat;
 
       &.form-check-input:focus {
         @apply border-transparent shadow-md;
       }
 
-      &.form-check-input:checked[type="radio"] {
+      &.form-check-input:checked[type='radio'] {
         background-color: none;
       }
 

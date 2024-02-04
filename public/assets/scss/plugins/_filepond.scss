@@ -32,10 +32,10 @@
   @apply ms-5 #{!important};
 }
 .dzu-dropzone {
-  @apply bg-gray-100 border-[#e2e8f0] border dark:border-white/10  overflow-auto #{!important};
+  @apply overflow-auto border border-[#e2e8f0] bg-gray-100  dark:border-white/10 #{!important};
 }
 .dzu-inputLabel {
-  @apply text-[#475569] dark:text-white font-normal #{!important};
+  @apply font-normal text-[#475569] dark:text-white #{!important};
 }
 .dzu-submitButton {
   @apply bg-primary text-white #{!important};

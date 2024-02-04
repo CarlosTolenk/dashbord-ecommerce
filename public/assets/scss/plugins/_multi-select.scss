@@ -1,7 +1,7 @@
 /* Start React multi select Styles */
 
-[dir="rtl"] {
-  .rtl\:space-x-reverse> :not([hidden])~ :not([hidden]) {
+[dir='rtl'] {
+  .rtl\:space-x-reverse > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 1;
   }
 
@@ -18,16 +18,16 @@
   }
 
   .react-dropdown-select-option-remove {
-    @apply -mt-[1px] -me-[3px] mb-1 -ms-[4px];
+    @apply -me-[3px] -ms-[4px] -mt-[1px] mb-1;
   }
 }
 
 .react-dropdown-select {
-  @apply shadow-none border-[#e2e8f0] #{!important};
+  @apply border-[#e2e8f0] shadow-none #{!important};
 }
 
 .react-dropdown-select-dropdown {
-  @apply top-[34px] border border-[#e2e8f0] shadow-sm p-0 #{!important};
+  @apply top-[34px] border border-[#e2e8f0] p-0 shadow-sm #{!important};
 }
 
 .multiple-select {
@@ -45,15 +45,15 @@
 }
 
 .dropdown-container {
-  @apply bg-bodybg border-[#e2e8f0] #{!important};
+  @apply border-[#e2e8f0] bg-bodybg #{!important};
 }
 
 .react-dropdown-select-item-selected {
-  @apply bg-bodybg border-[#e2e8f0] text-[#475569] #{!important};
+  @apply border-[#e2e8f0] bg-bodybg text-[#475569] #{!important};
 }
 
 .react-dropdown-select-item:hover {
-  @apply bg-bodybg border-[#e2e8f0] text-[#475569] #{!important};
+  @apply border-[#e2e8f0] bg-bodybg text-[#475569] #{!important};
 }
 
 .select__menu-list {
@@ -167,7 +167,6 @@
   }
 }
 
-
 .react-dropdown-select-item {
   @apply border-gray-200 #{!important};
 }
@@ -181,5 +180,5 @@
 }
 
 .react-dropdown-select-option {
-  @apply bg-primary my-1 ms-2 me-0 #{!important}
+  @apply my-1 me-0 ms-2 bg-primary #{!important};
 }

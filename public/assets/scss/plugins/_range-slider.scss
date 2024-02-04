@@ -11,7 +11,7 @@
 }
 
 #range-slider-ab .range-slider__thumb {
-  @apply w-[30px] h-[30px] rounded-[4px];
+  @apply h-[30px] w-[30px] rounded-[4px];
 }
 
 #range-slider-ab .range-slider__thumb[data-lower] {
@@ -57,7 +57,7 @@
 
 .rangeslider-thumb {
   div {
-    @apply dark:bg-bgdark shadow shadow-black/[0.05] dark:border dark:border-white/20 #{!important};
+    @apply shadow shadow-black/[0.05] dark:border dark:border-white/20 dark:bg-bgdark #{!important};
     div:first-child {
       @apply bg-primary #{!important};
       div {

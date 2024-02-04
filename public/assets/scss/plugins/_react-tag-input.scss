@@ -22,7 +22,7 @@
 // }
 .rti--container {
   .rti--tag {
-    @apply py-1 pe-0 ps-2 rounded-[1rem] leading-[initial] #{!important};
+    @apply rounded-[1rem] py-1 pe-0 ps-2 leading-[initial] #{!important};
     span {
       @apply text-[12px] font-medium;
     }
@@ -33,7 +33,7 @@
 }
 
 .product-tags .rti--container .rti--input {
-  @apply border-0 w-[130px] #{!important};
+  @apply w-[130px] border-0 #{!important};
 }
 .rti--container {
   @apply border border-[#e2e8f0] #{!important};
@@ -41,7 +41,7 @@
 
 .skills-box {
   .rti--container {
-    @apply p-0 border-0 #{!important};
+    @apply border-0 p-0 #{!important};
   }
 }
 .product-tags-section {
@@ -68,7 +68,7 @@
     }
   }
   .rti--container {
-    @apply bg-bgdark border-white/10 #{!important};
+    @apply border-white/10 bg-bgdark #{!important};
   }
   .rti--tag {
     @apply border-white/10 bg-bodybg text-white/70 #{!important};
@@ -78,10 +78,10 @@
   }
 }
 
-[dir="rtl"] {
+[dir='rtl'] {
   .rti--container {
     .rti--tag {
-      @apply py-1 px-2 #{!important};
+      @apply px-2 py-1 #{!important};
     }
   }
 }

@@ -1,33 +1,32 @@
 @layer components {
-    
-    /* Start Offcanvas Styles */
-    .ti-offcanvas {
-        @apply fixed transition-all duration-300 transform h-full bg-white dark:bg-bgdark dark:border-white/10 z-[60] shadow-md;
+  /* Start Offcanvas Styles */
+  .ti-offcanvas {
+    @apply fixed z-[60] h-full transform bg-white shadow-md transition-all duration-300 dark:border-white/10 dark:bg-bgdark;
 
-        &.ti-offcanvas-left {
-            @apply ltr:-translate-x-full rtl:translate-x-full top-0 ltr:left-0 rtl:right-0 max-w-sm w-full ltr:border-r rtl:border-l;
-        }
-        &.ti-offcanvas-top {
-            @apply -translate-y-full top-0 inset-x-0 max-h-40 w-full border-b;
-        }
-        &.ti-offcanvas-right {
-            @apply ltr:translate-x-full rtl:-translate-x-full top-0 ltr:right-0 rtl:left-0 max-w-sm w-full ltr:border-l rtl:border-r;
-        }
-        &.ti-offcanvas-bottom {
-            @apply translate-y-full bottom-0 inset-x-0 max-h-40 w-full border-b;
-        }
-        &.open {
-            @apply translate-x-0  translate-y-0 #{!important};
-        }
-        .ti-offcanvas-header {
-           @apply flex justify-between items-center py-3 px-4 border-b dark:border-white/10;
-        }
-        .ti-offcanvas-title{
-            @apply font-bold text-gray-800 dark:text-white;
-        }
-        .ti-offcanvas-body {
-            @apply p-4 overflow-y-auto h-[90%];
-        }
+    &.ti-offcanvas-left {
+      @apply top-0 w-full max-w-sm ltr:left-0 ltr:-translate-x-full ltr:border-r rtl:right-0 rtl:translate-x-full rtl:border-l;
     }
-    /* End Offcanvas Styles */
+    &.ti-offcanvas-top {
+      @apply inset-x-0 top-0 max-h-40 w-full -translate-y-full border-b;
+    }
+    &.ti-offcanvas-right {
+      @apply top-0 w-full max-w-sm ltr:right-0 ltr:translate-x-full ltr:border-l rtl:left-0 rtl:-translate-x-full rtl:border-r;
+    }
+    &.ti-offcanvas-bottom {
+      @apply inset-x-0 bottom-0 max-h-40 w-full translate-y-full border-b;
+    }
+    &.open {
+      @apply translate-x-0  translate-y-0 #{!important};
+    }
+    .ti-offcanvas-header {
+      @apply flex items-center justify-between border-b px-4 py-3 dark:border-white/10;
+    }
+    .ti-offcanvas-title {
+      @apply font-bold text-gray-800 dark:text-white;
+    }
+    .ti-offcanvas-body {
+      @apply h-[90%] overflow-y-auto p-4;
+    }
+  }
+  /* End Offcanvas Styles */
 }

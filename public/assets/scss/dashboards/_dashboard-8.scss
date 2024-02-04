@@ -11,13 +11,13 @@
 
 #performanceReport {
   .apexcharts-xaxis-label {
-    @apply text-[0.35rem] sm:text-xs rotate-0;
+    @apply rotate-0 text-[0.35rem] sm:text-xs;
   }
   .apexcharts-legend-text {
-    @apply sm:text-xs text-[10px] #{!important};
+    @apply text-[10px] sm:text-xs #{!important};
   }
   .apexcharts-legend {
-    @apply sm:my-0 -my-[6px];
+    @apply -my-[6px] sm:my-0;
   }
 }
 

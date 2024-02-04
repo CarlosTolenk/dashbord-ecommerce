@@ -1,10 +1,10 @@
 /* Start Sweetalert  Styles */
 
 .swal2-popup {
-  @apply dark:bg-bgdark dark:text-white p-6 rounded-sm #{!important};
+  @apply rounded-sm p-6 dark:bg-bgdark dark:text-white #{!important};
 }
 .swal2-title {
-  @apply p-0 text-xl mb-2 #{!important};
+  @apply mb-2 p-0 text-xl #{!important};
 }
 .swal2-icon {
   @apply mt-0 #{!important};
@@ -14,7 +14,7 @@
 }
 
 .swal2-styled.swal2-confirm {
-  @apply bg-primary rounded-sm #{!important};
+  @apply rounded-sm bg-primary #{!important};
 }
 
 .swal2-styled.swal2-confirm:focus {
@@ -34,7 +34,7 @@
 }
 
 .swal2-loader {
-  @apply border-t-primary border-b-primary #{!important};
+  @apply border-b-primary border-t-primary #{!important};
 }
 
 .swal2-file,
@@ -46,10 +46,10 @@
 .swal2-file:focus,
 .swal2-input:focus,
 .swal2-textarea:focus {
-  @apply border-primary ring-primary shadow shadow-primary #{!important};
+  @apply border-primary shadow shadow-primary ring-primary #{!important};
 }
 
-.swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
+.swal2-icon.swal2-error [class^='swal2-x-mark-line'] {
   @apply bg-danger #{!important};
 }
 
@@ -77,22 +77,22 @@
   @apply border-warning text-warning #{!important};
 }
 .swal2-icon {
-  @apply w-[60px] h-[60px] #{!important};
+  @apply h-[60px] w-[60px] #{!important};
 }
-.swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
-  @apply top-[30px] w-[30px] h-1 #{!important};
+.swal2-icon.swal2-error [class^='swal2-x-mark-line'] {
+  @apply top-[30px] h-1 w-[30px] #{!important};
 }
 .swal2-actions,
 .swal2-html-container {
   @apply m-0 #{!important};
 }
-.swal2-icon.swal2-success [class^="swal2-success-line"][class$="long"] {
+.swal2-icon.swal2-success [class^='swal2-success-line'][class$='long'] {
   @apply top-7 w-8 #{!important};
 }
-.swal2-icon.swal2-success [class^="swal2-success-line"][class$="tip"] {
+.swal2-icon.swal2-success [class^='swal2-success-line'][class$='tip'] {
   @apply top-[34px] w-[17px] #{!important};
 }
-.swal2-image{
+.swal2-image {
   @apply dark:brightness-0;
 }
 .swal2-icon.swal2-success .swal2-success-fix {

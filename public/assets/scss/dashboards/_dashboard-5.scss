@@ -1,7 +1,7 @@
 /* Start:: Dashboard-5 Styles */
 
 .nft-auction-time {
-  @apply absolute top-auto bottom-1 md:bottom-5 inset-x-4 bg-white/10 backdrop-blur-[1.875rem] rounded-sm;
+  @apply absolute inset-x-4 bottom-1 top-auto rounded-sm bg-white/10 backdrop-blur-[1.875rem] md:bottom-5;
 }
 
 .nft-like-section {
@@ -13,27 +13,27 @@
 }
 
 .nft-featuredcollect-image {
-  @apply xxl:h-[8.813rem] rounded-sm relative before:absolute before:w-full before:h-full before:bg-black/10 #{!important};
+  @apply relative rounded-sm before:absolute before:h-full before:w-full before:bg-black/10 xxl:h-[8.813rem] #{!important};
 }
 
 .creators-table {
   .ti-custom-table th {
-    @apply text-xs text-[#495057]  dark:text-white py-3 px-3;
+    @apply px-3 py-3  text-xs text-[#495057] dark:text-white;
   }
 
   .ti-custom-table td {
-    @apply text-xs font-medium py-3 px-3;
+    @apply px-3 py-3 text-xs font-medium;
   }
 }
 
 .pagination-dynamic {
   .swiper-slide {
-    @apply block text-start text-inherit text-xs bg-transparent #{!important};
+    @apply block bg-transparent text-start text-xs text-inherit #{!important};
   }
 }
 
 .nft-img {
-  @apply w-6 h-6 sm:h-[2.375rem] sm:w-[2.375rem] hidden sm:block;
+  @apply hidden h-6 w-6 sm:block sm:h-[2.375rem] sm:w-[2.375rem];
   @apply xxl:hidden #{!important};
 }
 
@@ -43,8 +43,11 @@
 
 //safari
 .nft-auction-time {
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness)
+    var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale)
+    var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert)
+    var(--tw-backdrop-opacity) var(--tw-backdrop-saturate)
+    var(--tw-backdrop-sepia);
 }
-
 
 /* End:: Dashboard-5 Styles */

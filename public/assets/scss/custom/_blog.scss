@@ -1,7 +1,7 @@
 /* Start blog Styles */
 
 .blog-caption {
-  @apply absolute  bottom-6 p-0 ltr:right-[15%] ltr:left-6 rtl:left-[15%] rtl:right-6 text-white;
+  @apply absolute  bottom-6 p-0 text-white ltr:left-6 ltr:right-[15%] rtl:left-[15%] rtl:right-6;
 }
 
 /* End blog Styles */

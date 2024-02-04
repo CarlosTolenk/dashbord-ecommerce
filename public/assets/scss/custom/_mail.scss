@@ -1,39 +1,39 @@
 /* Start Mail Styles */
 #mail-compose {
-  @apply h-auto top-auto bottom-0 ltr:left-auto rtl:right-auto ltr:right-0 rtl:left-0;
+  @apply bottom-0 top-auto h-auto ltr:left-auto ltr:right-0 rtl:left-0 rtl:right-auto;
 
   .ti-modal-box {
-    @apply md:ltr:mr-7 md:ltr:ml-auto md:rtl:ml-7 md:rtl:mr-auto mx-7 md:mx-0 mt-0 md:max-w-lg max-w-md #{!important};
+    @apply mx-7 mt-0 max-w-md md:mx-0 md:max-w-lg md:ltr:ml-auto md:ltr:mr-7 md:rtl:ml-7 md:rtl:mr-auto #{!important};
   }
 }
 
 .ti-modal-min-screen,
 .ti-modal-max-screen {
-  @apply inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-800 hover:text-gray-600 dark:text-white dark:hover:text-white/80 focus:outline-none focus:ring-0 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white transition-all text-sm dark:focus:ring-white/10 dark:focus:ring-offset-white/10;
+  @apply inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-md text-sm text-gray-800 transition-all hover:text-gray-600 focus:outline-none focus:ring-0 focus:ring-gray-400 focus:ring-offset-0 focus:ring-offset-white dark:text-white dark:hover:text-white/80 dark:focus:ring-white/10 dark:focus:ring-offset-white/10;
 }
 
 .mail-fullscreen {
-  @apply ltr:left-0 rtl:right-0 top-0 #{!important};
+  @apply top-0 ltr:left-0 rtl:right-0 #{!important};
 
   .ti-modal-box {
-    @apply max-w-full w-full #{!important};
+    @apply w-full max-w-full #{!important};
   }
 }
 
 .mail-link,
 .mail-main {
-  @apply max-w-[650px] truncate  my-auto #{!important};
+  @apply my-auto max-w-[650px]  truncate #{!important};
 }
 
 .mail-minscreen {
-  @apply top-auto ltr:left-auto rtl:right-auto bottom-0 h-auto #{!important};
+  @apply bottom-0 top-auto h-auto ltr:left-auto rtl:right-auto #{!important};
 
   .ti-modal-box {
     @apply mb-0 #{!important};
   }
 
   &.mail-fullscreen .ti-modal-box {
-    @apply max-w-lg w-auto #{!important};
+    @apply w-auto max-w-lg #{!important};
   }
 
   .ti-modal-header {

@@ -1,7 +1,7 @@
 /* Start:: Dashboard-4 Styles */
 .basic-subscription,
 .pro-subscription {
-  @apply relative before:absolute before:w-2 before:h-2 ltr:before:-left-[0.938rem] rtl:before:-right-[0.938rem] before:rounded-md before:top-[0.6rem];
+  @apply relative before:absolute before:top-[0.6rem] before:h-2 before:w-2 before:rounded-md ltr:before:-left-[0.938rem] rtl:before:-right-[0.938rem];
 }
 
 .basic-subscription:before {
@@ -27,7 +27,7 @@
   }
 
   .ti-custom-table td {
-    @apply text-xs font-medium py-3 px-4;
+    @apply px-4 py-3 text-xs font-medium;
   }
 }
 
