@@ -1,4 +1,5 @@
-import type { Config } from "tailwindcss";
+import type, { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -161,6 +162,19 @@ const config: Config = {
     require("@tailwindcss/forms"),
     require("tailwind-clip-path"),
     require("preline/plugin"),
+    plugin(function ({ addComponents }) {
+      addComponents({
+        ".dirrtl": {
+          direction: "ltr",
+        },
+        ".dir-rtl": {
+          direction: "rtl",
+        },
+        ".dir-ltr": {
+          direction: "ltr",
+        },
+      });
+    }),
   ],
 };
 export default config;

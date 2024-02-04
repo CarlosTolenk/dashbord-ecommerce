@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +20,7 @@ export default function Home() {
                 <div className="lg:col-span-6 col-span-12">
                     <div className="authentication-page w-full">
                         <main id="content" className="w-full max-w-md mx-auto p-6">
-                            <Link href="/public" className="header-logo lg:hidden">
+                            <Link href="/" className="header-logo lg:hidden">
                                 <Image width={40} height={40} src="/assets/img/brand-logos/desktop-logo.png"
                                        alt="logo"
                                        className="mx-auto block dark:hidden"/>
@@ -36,7 +36,7 @@ export default function Home() {
                                             Don't have an account yet?
                                             <Link
                                                 className="text-primary ml-1 decoration-2 hover:underline font-medium"
-                                                href="/public">
+                                                href="/">
                                                 Sign up here
                                             </Link>
                                         </p>
@@ -95,9 +95,9 @@ export default function Home() {
                                                             me</label>
                                                     </div>
                                                 </div>
-                                                <a
-                                                    className="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-sm border border-transparent font-semibold bg-primary text-white focus:outline-none focus:ring-0 focus:ring-primary focus:ring-offset-0 transition-all text-sm dark:focus:ring-offset-white/10 hover:bg-primary/80">Sign
-                                                    in</a>
+                                                <Link href={"/dashboard/sales"}
+                                                      className="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-sm border border-transparent font-semibold bg-primary text-white focus:outline-none focus:ring-0 focus:ring-primary focus:ring-offset-0 transition-all text-sm dark:focus:ring-offset-white/10 hover:bg-primary/80">Sign
+                                                    in</Link>
                                             </div>
                                         </div>
                                     </div>
